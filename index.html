@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Coisas de MDF | Simples e Criativo</title>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- Link para Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+</head>
+
+<body>
+    <!-- Start of Menu -->
+        <menu id="toggleMenu" class="menu__container hide">
+            <div id="menu" class="menu">
+                <i class='bx bx-x exit__menu-button' onclick="exitMenu()"></i>
+                <li class="nav-links"><a href="index.html">Página Inicial</a></li>
+                <li class="nav-links"><a href="#">Loja</a></li>
+                <li class="nav-links"><a href="#">Quem Somos</a></li>
+                <li class="nav-links"><a href="#">Contato</a></li>
+                <li class="nav-links"><a href="#">Revenda</a></li>
+                <li class="nav-links"><a href="#">Personalizado</a></li>
+            </div>
+        </menu>
+        
+    <!-- End of Menu -->
+
+    <!-- Header -->
+        <section class="header" id="header">
+                <nav class="nav-bar" id="nav-bar">
+                    <div class="frete">Frete Grátis para Todo o Brasil</div>
+                    <div class="nav-bar__down">
+                        <img src="assets/img/logo-menu.PNG" class="logo-menu">
+                        <i class='bx bx-menu hamburger' onclick="openMenu()"></i>
+                    </div>
+                </nav>
+                <img src="assets/img/img-fundo.PNG" class="img-fundo">
+        </section>
+    <!-- End of Header -->
+
+
+    <!-- News -->
+        <section class="grid__container">
+            <h1 class="title">Novidades</h1>
+            <div class="items__block">
+                <div class="item" id="item-1"></div>
+                <div class="item" id="item-2"></div> 
+                <div class="item" id="item-3"></div> 
+                <div class="item" id="item-4"></div> 
+                <div class="item" id="item-5"></div> 
+                <div class="item" id="item-6"></div> 
+                <div class="item" id="item-7"></div> 
+                <div class="item" id="item-8"></div> 
+                <div class="item" id="item-9"></div>  
+            </div>
+        </section>
+    <!-- End of News -->
+
+
+    <!-- Our Instagram -->
+        <section class="ig__container">
+            <h1 class="title">Nosso Instagram</h1>
+                <a class="ig__block" href="https://www.instagram.com/coisasdemdf.com.br/" target="_blank">
+                    <div class="ig__item" id="ig-1"></div>
+                    <div class="ig__item" id="ig-2"></div>
+                    <div class="ig__item" id="ig-3"></div>
+                </a>
+        </section>
+    <!-- End of Our Instagram -->
+
+
+    <!-- Footer -->
+        <section class="footer">
+            <ul class="footer__links">
+                <li class="footer__link">Loja</li>
+                <li class="footer__link">Blog</li>
+                <li class="footer__link">Quem Somos</li>
+                <li class="footer__link">Contato</li>
+            </ul>
+            <ul class="footer__links">
+                <li class="footer__link">FAQ</li>
+                <li class="footer__link">Envio e Devoluções</li>
+                <li class="footer__link">Revendedores</li>
+                <li class="footer__link">Métodos de Pagamento</li>
+            </ul>
+            <div class="pg__icons">
+                <a href="https://www.facebook.com/Coisas-de-MDF-105229301469630/" class='bx bxl-facebook icon' target="_blank" ></a>
+                <a href="https://www.instagram.com/coisasdemdf.com.br/" class='bx bxl-instagram icon' target="_blank" ></a>
+            </div>
+            <a href="#header"><img src="assets/img/logo-menu.png"></a>  
+        </section>
+    <!-- Footer End -->
+
+
+     <!-- ChatBox -->
+     <div class="white__box">
+        <a href="https://api.whatsapp.com/send?phone=5512981173031" id="chat" class='bx bxs-message-rounded-detail bx-tada-hover' target="_blank" ></a>
+    </div>
+<!-- End of ChatBox  -->
+
+
+    <!-- Important -->
+        <section class="end">
+            <div class="end__text">
+                <p>©2020 por Coisas de  MDF. Cutting Laser  - CPF/CNPJ: 24.245.811/0001-10 - Al. dos Ingás, 46, Feiticeira, Ilhabela, SP 11630-000. </p>
+                <p>E-mail para contato: coisasdemdf@gmail.com.br - WhatsApp: (12) 98117-3031</p> 
+                <p>Prazo estimado para entrega de até 7 dias úteis após a postagem.</p>
+            </div>
+        </section>
+    <!-- End of Important -->
+
+    <script>
+        function openMenu() {
+        var toggle = document.getElementById("toggleMenu");
+        toggle.classList.remove("hide");
+    }
+        function exitMenu() {
+        var toggle = document.getElementById("toggleMenu");
+        toggle.classList.add("hide");
+    }
+    </script>
+
+
+</body>
+</html>
