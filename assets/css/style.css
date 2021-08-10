@@ -16,6 +16,7 @@
     box-sizing: border-box;
     outline: none;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 body{
@@ -45,11 +46,15 @@ a{
     right: 5%;
     font-size: 2.9rem;
     cursor: pointer;
-    color: whitesmoke;
+}
+
+.exit__menu-button:hover{
+    opacity: .5;
 }
 
 .menu__container{
     background-color: rgba(255,255,255, 0.8);
+    color: whitesmoke;
     position: fixed;
     max-height: 100vh;
     height: 100%;
@@ -92,7 +97,6 @@ a{
     font-size: 1.4rem;
     font-weight: 800;
     font-family: 'Raleway', sans-serif;
-    color: whitesmoke;
 }
 
 .nav-links a:hover{
@@ -111,6 +115,11 @@ a{
     display: flex;
     align-items: center;
     z-index: 10;
+    cursor: pointer;
+}
+
+.white__box:hover{
+    opacity: .5;
 }
 
 #chat__icon{
@@ -139,9 +148,17 @@ a{
     cursor: pointer;
 }
 
+.logo-menu:hover{
+    opacity: .9;
+}
+
 .hamburger{
     font-size: 2.8rem;
     cursor: pointer;
+}
+
+.hamburger:hover{
+    opacity: .5;
 }
 
 .nav-bar{
@@ -209,7 +226,7 @@ a{
     width: 27vw;
     height: 27vw;
     cursor: pointer;
-    transition: .1s ease-in;
+    transition: .5s ease;
 }
 
 
@@ -309,7 +326,8 @@ a{
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
-    height: 100%;
+    width: 100vw;
+    max-width: 100%;
     padding-bottom: 100px;
 }
 
@@ -321,14 +339,14 @@ a{
 }
 
 .ig__item{
-    width: 21.8rem;
-    height: 21.8rem;
+    width: 25vw;
+    height: 25vw;
     cursor: pointer;
-    transition: transform .2s ease-in;
+    transition: transform .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .ig__item:hover{
-    transform: translateY(-3px);
+    transform: translateY(-15px);
 }
 
 
@@ -360,7 +378,7 @@ a{
     font-weight: 800;
     color: whitesmoke;
     justify-content: space-around;
-    padding: 50px 10rem;
+    padding: 3rem 10rem;
     align-items: center;
 }
 
@@ -368,9 +386,6 @@ a{
     font-size: 1.9rem;
     padding: 0 .5rem;
     cursor: pointer;
-    text-decoration: none;
-    list-style: none;
-    color: whitesmoke;
 }
 
 .icon:hover{
@@ -401,7 +416,6 @@ a{
     opacity: .7;
 }
 
-/* End */
 
 .end{
     text-transform: none;
@@ -411,87 +425,5 @@ a{
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: .7rem;
-}
-
-.end__text{
     padding: 20px 0;
-}
-
-@media screen and (max-width: 468px) {
-
-    /* sections */
-
-    .menu__container{
-        max-width: 468px;
-    }
-
-    .header{
-        max-width: 468px;
-        height: 100%;
-        padding-top: 6rem;
-    }
-
-    .grid__container{
-        max-width: 468px;
-    }
-
-    .ig__container{
-        max-width: 468px;
-    }
-
-    .footer{
-        max-width: 468px;
-        padding: 0;
-        margin: 0;
-    }
-
-    #footer{
-        max-width: 468px;
-        padding: 0;
-        margin: 0;
-    }
-
-    .end{
-       max-width: 468px;
-    }
-
-    /* fim sections */
-
-
-    /* Barra de Navegação */
-
-    .frete{
-        max-width: 468px;
-    }
-
-    .nav-bar{
-        max-width: 468px;
-    }
-
-    .nav-bar__down{
-        max-width: 468px;
-    }
-
-    /* Header */
-    .img-fundo{
-        max-width: 10rem;
-    }
-
-    /* Novidades */
-    .items__block{
-        grid-template-columns: 50% 50%;
-        margin: 0;
-        padding: 0;
-        gap: 0;
-    }
-
-    .item{
-        max-width: 117px;
-        max-height: 117px;
-    }
-
-    #item-7, #item-8, #item-9{
-        display: none;
-    }
-
 }

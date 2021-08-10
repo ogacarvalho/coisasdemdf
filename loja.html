@@ -4,8 +4,8 @@
     <title>Coisas de MDF | Simples e Criativo</title>
     <!-- Meta -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">  
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Google Fonts -->
@@ -22,20 +22,22 @@
 
 
     <!-- Start of Menu -->
-        <menu id="toggleMenu" class="menu__container hide">
-            <div id="menu" class="menu">
-                    <i class='bx bx-x exit__menu-button' onclick="exitMenu()"></i>
-                <ul>
-                    <li class="nav-links"><a href="index.html" onclick="exitMenu()">Página Inicial</a></li>
-                    <li class="nav-links"><a href="loja.html" class="current" onclick="exitMenu()">Loja</a></li>
-                    <li class="nav-links"><a href="#" onclick="exitMenu()">Quem Somos</a></li>
-                    <li class="nav-links"><a href="#" onclick="exitMenu()">Contato</a></li>
-                    <li class="nav-links"><a href="#" onclick="exitMenu()">Revenda</a></li>
-                    <li class="nav-links"><a href="#" onclick="exitMenu()">Personalizado</a></li>
-                </ul>
-                <div class="pg__icons-header">
-                    <a href="https://www.facebook.com/Coisas-de-MDF-105229301469630/" class='bx bxl-facebook icon' target="_blank" onclick="exitMenu()"></a>
-                    <a href="https://www.instagram.com/coisasdemdf.com.br/" class='bx bxl-instagram icon' target="_blank" onclick="exitMenu()"></a>
+        <menu id="toggleMenu" class="menu__container hide" onclick="exitMenu()">
+            <div class="menu">
+                <div id="menu__inside">
+                        <i class='bx bx-x exit__menu-button' onclick="exitMenu()"></i>
+                    <ul>
+                        <li class="nav-links"><a href="index.html" onclick="exitMenu()">Página Inicial</a></li>
+                        <li class="nav-links"><a href="loja.html" class="current" onclick="exitMenu()">Loja</a></li>
+                        <li class="nav-links"><a href="quemsomos.html" onclick="exitMenu()">Quem Somos</a></li>
+                        <li class="nav-links"><a href="contato.html" onclick="exitMenu()">Contato</a></li>
+                        <li class="nav-links"><a href="revenda.html" onclick="exitMenu()">Revenda</a></li>
+                        <li class="nav-links"><a href="personalizado.html" onclick="exitMenu()">Personalizado</a></li>
+                    </ul>
+                    <div class="pg__icons-header">
+                        <a href="https://www.facebook.com/Coisas-de-MDF-105229301469630/" class='bx bxl-facebook icon' target="_blank" onclick="exitMenu()"></a>
+                        <a href="https://www.instagram.com/coisasdemdf.com.br/" class='bx bxl-instagram icon' target="_blank" onclick="exitMenu()"></a>
+                    </div>
                 </div>
             </div>
         </menu>
@@ -86,7 +88,8 @@
 
 
     <!-- Footer -->
-        <section id="footer" class="footer">
+        <section id="footer">
+            <div class="footer">
             <ul class="footer__links">
                 <li class="footer__link">Loja</li>
                 <li class="footer__link">Blog</li>
@@ -104,13 +107,14 @@
                 <a href="https://www.instagram.com/coisasdemdf.com.br/" class='bx bxl-instagram icon' target="_blank" ></a>
             </div>
             <a href="#header"><img src="assets/img/logo-menu.png"></a>  
+        </div>
         </section>
     <!-- Footer End -->
 
 
      <!-- ChatBox -->
      <div class="white__box">
-        <a href="https://api.whatsapp.com/send?phone=5512981173031" id="chat" class='bx bxs-message-rounded-detail bx-tada-hover' target="_blank" ></a>
+        <a href="https://api.whatsapp.com/send?phone=5512981173031" id="chat__icon" class='bx bxs-message-rounded-detail bx-tada-hover' target="_blank" ></a>
     </div>
 <!-- End of ChatBox  -->
 
