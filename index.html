@@ -156,25 +156,24 @@
 
     // Serve para fazer o scroll do menu para cima e para baixo 
 
-        var scrollingY = window.pageYOffset;
-        window.onscroll = function() {
-        var posAtual = window.pageYOffset;
-        if (scrollingY > posAtual) {
-        document.getElementById("nav-bar").style.top = "0";
-        } else {
-         document.getElementById("nav-bar").style.top = "-100%";
-        }
-        scrollingY = posAtual;
-        }
-        
-        // Uma segunda solução
-        // window.addEventListener('scroll', () => {
-        // if (window.scrollY > 50) {
-        // return document.querySelector('.nav-bar').classList.add('hide')
+        // var scrollingY = window.pageYOffset;
+        // window.onscroll = function() {
+        // var posAtual = window.pageYOffset;
+        // if (scrollingY > posAtual) {
+        // document.getElementById("nav-bar").style.top = "0";
+        // } else {
+        //  document.getElementById("nav-bar").style.top = "-100%";
         // }
-        // return document.querySelector('.nav-bar').classList.remove('hide')
+        // scrollingY = posAtual;
+        // }
+        
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+        return document.querySelector('.nav-bar').style.top = "-100%";
+        }
+        return document.querySelector('.nav-bar').style.top ="0"
 
-        // });
+        });
 
     </script>
     <!-- End of JavaScript -->
