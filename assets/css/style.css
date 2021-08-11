@@ -208,6 +208,7 @@ a{
 }
 
 .title{
+    font-size: 24px;
     color: lightgray;
     letter-spacing: 0.3em;
     text-align: center;
@@ -374,7 +375,6 @@ a{
     display: flex;
     background-color: var(--background-color);
     font-family: 'Raleway', sans-serif;
-    font-size: .6rem;
     font-weight: 800;
     color: whitesmoke;
     justify-content: space-around;
@@ -398,6 +398,7 @@ a{
 }
 
 .footer__link{
+    font-size: 10px;
     cursor: pointer;
     line-height: 1.8;
 }
@@ -426,4 +427,124 @@ a{
     font-weight: 300;
     font-size: .7rem;
     padding: 20px 0;
+}
+
+
+/* Para Tablet's */
+@media screen and (max-width: 968px) { 
+    .menu{
+        max-width: 45%;
+    }
+
+    @keyframes mymove {
+        from {left: 100%;}
+        to {left: 55%;}
+    }
+}
+
+/* Para celulares */
+
+@media screen and (max-width: 480px){
+
+    .menu{
+        max-width: 70%;
+    }
+
+    @keyframes mymove {
+        from {left: 100%;}
+        to {left: 30%;}
+    }
+
+    .nav-links{
+        font-size: 1.1rem;
+        padding: 10px 6px;
+    }
+
+    .exit__menu-button{
+        font-size: 2.3rem;
+    }
+
+    .pg__icons-header{
+        margin-top: 70%;
+    }
+
+    .pg__icons-header .icon{
+        font-size: 2.2rem;
+    }
+
+    .logo-menu{
+        width: 60%;
+    }
+
+    .hamburger{
+        font-size: 2.2rem;
+    }
+
+    .nav-bar__down{
+        padding: 1% 5%;
+    }
+
+    .img-fundo{
+        height: 260px;
+    }
+
+    /* NOVIDADES GRID */
+
+    .title{
+        font-size: 22px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .items__block{
+        grid-template-columns: 1fr 1fr;
+        gap: 3px;
+    }
+
+    .item{
+        width: 45vw;
+        height: 45vw;
+    }
+
+    #item-7, #item-8, #item-9, #ig-2, #ig-3{
+        display: none;
+    }
+
+    /* Instagram Grid */
+
+    .ig__block{
+        display: inline-flex;
+    }
+
+    .ig__item{
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .ig__container{
+        padding-bottom: 50px;
+
+    }
+
+    /* footer */
+
+    .footer{
+        padding: 1rem 2rem;
+    }
+
+    .footer__links{
+        display: none;
+    }
+
+    .pg__icons .icon{
+        font-size: 2rem
+    }
+
+    /* End */
+
+    .end{
+        font-size: .5rem;
+        padding: 10px 0;
+    }
+
 }
