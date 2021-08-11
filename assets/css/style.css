@@ -239,7 +239,7 @@ a{
     width: 27vw;
     height: 27vw;
     cursor: pointer;
-    transition: .5s ease;
+    transition: .8s;
 }
 
 
@@ -247,10 +247,12 @@ a{
     background-image: url("../img/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: .5s;
     
 }
 #item-1:hover{
     background-image: url("../img/1-b.jpg");
+    transition: .5s;
 }
 
 
@@ -258,6 +260,7 @@ a{
     background-image: url("../img/2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: .5s;
 }
 #item-2:hover{
     background-image: url("../img/2-b.png");
@@ -271,6 +274,7 @@ a{
 }
 #item-3:hover{
     background-image: url("../img/3-b.jpg");
+    transition: .5s;
 }
 
 
@@ -281,7 +285,6 @@ a{
 }
 #item-4:hover{
     background-image: url("../img/4-b.jpg");
-    cursor: pointer;
 }
 
 
@@ -292,7 +295,6 @@ a{
 }
 #item-5:hover{
     background-image: url("../img/5-b.png");
-    cursor: pointer;
 }
 
 
@@ -303,7 +305,6 @@ a{
 }
 #item-6:hover{
     background-image: url("../img/6-b.jpg");
-    cursor: pointer;
 }
 
 
