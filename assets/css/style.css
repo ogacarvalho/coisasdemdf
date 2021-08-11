@@ -17,7 +17,13 @@
     outline: none;
     scroll-behavior: smooth;
     user-select: none;
+
 }
+
+/* Puta função pra esconder mas manter ativo o scroll-bar */
+*::-webkit-scrollbar {
+    display: none;
+  }
 
 body{
     text-transform: uppercase;
@@ -31,6 +37,7 @@ a{
     /* Serve para cor ser atribuida do elemento PAI */
     color: inherit;
 }
+
 /* NAV-BAR VERSÃO MOBILE: OFF*/
 #mobile{
     display: none;
@@ -172,7 +179,7 @@ a{
     max-width: 100vw;
     width: 100%;
     height: auto;
-    transition: top .2s ;
+    transition: top .3s;
 }
 
 .nav-bar__down{
@@ -242,7 +249,7 @@ a{
     background-size: cover;
     
 }
-#item-1:hover, #item-1:active{
+#item-1:hover{
     background-image: url("../img/1-b.jpg");
 }
 
@@ -252,7 +259,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-2:hover, #item-2:active{
+#item-2:hover{
     background-image: url("../img/2-b.png");
 }
 
@@ -262,7 +269,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-3:hover, #item-3:active{
+#item-3:hover{
     background-image: url("../img/3-b.jpg");
 }
 
@@ -272,7 +279,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-4:hover, #item-4:active{
+#item-4:hover{
     background-image: url("../img/4-b.jpg");
 }
 
@@ -282,7 +289,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-5:hover, #item-5:active{
+#item-5:hover{
     background-image: url("../img/5-b.png");
 }
 
@@ -292,7 +299,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-6:hover, #item-6:active{
+#item-6:hover{
     background-image: url("../img/6-b.jpg");
 }
 
@@ -302,7 +309,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-7:hover, #item-7:active{
+#item-7:hover{
     background-image: url("../img/7-b.jpg");
 }
 
@@ -312,7 +319,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-8:hover, #item-8:active{
+#item-8:hover{
     background-image: url("../img/8-b.jpg");
 }
 
@@ -322,7 +329,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-9:hover, #item-9:active{
+#item-9:hover{
     background-image: url("../img/9-b.jpg");
 }
 
