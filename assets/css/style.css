@@ -251,6 +251,7 @@ a{
 }
 #item-1:hover{
     background-image: url("../img/1-b.jpg");
+    transition: .5s ease-in-out;
 }
 
 
@@ -263,6 +264,7 @@ a{
 }
 #item-2:hover{
     background-image: url("../img/2-b.png");
+    transition: .5s ease-in-out;
 }
 
 
@@ -274,6 +276,7 @@ a{
 }
 #item-3:hover{
     background-image: url("../img/3-b.jpg");
+    transition: .5s ease-in-out;
 }
 
 
@@ -285,6 +288,7 @@ a{
 }
 #item-4:hover{
     background-image: url("../img/4-b.jpg");
+    transition: .5s ease-in-out;
 }
 
 
@@ -296,6 +300,7 @@ a{
 }
 #item-5:hover{
     background-image: url("../img/5-b.png");
+    transition: .5s ease-in-out;
 }
 
 
@@ -307,6 +312,7 @@ a{
 }
 #item-6:hover{
     background-image: url("../img/6-b.jpg");
+    transition: .5s ease-in-out;
 }
 
 
@@ -318,6 +324,7 @@ a{
 }
 #item-7:hover{
     background-image: url("../img/7-b.jpg");
+    transition: .5s ease-in-out;
 }
 
 
@@ -329,6 +336,7 @@ a{
 }
 #item-8:hover{
     background-image: url("../img/8-b.jpg");
+    transition: .5s ease-in-out;
 }
 
 
@@ -340,6 +348,7 @@ a{
 }
 #item-9:hover{
     background-image: url("../img/9-b.jpg");
+    transition: .5s ease-in-out;
 }
 
 /* Instagram Section */
