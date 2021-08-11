@@ -31,6 +31,10 @@ a{
     /* Serve para cor ser atribuida do elemento PAI */
     color: inherit;
 }
+/* NAV-BAR VERSÃO MOBILE: OFF*/
+#mobile{
+    display: none;
+}
 
 .current{
     color: grey;
@@ -168,6 +172,7 @@ a{
     max-width: 100vw;
     width: 100%;
     height: auto;
+    transition: .9s;
 }
 
 .nav-bar__down{
@@ -432,6 +437,34 @@ a{
 
 /* Para Tablet's */
 @media screen and (max-width: 968px) { 
+
+    .img-fundo{
+        height: 450px;
+    }
+
+    .ig__item{
+        width: 30vw;
+        height: 30vh;
+    }
+
+    .footer{
+        padding: 5rem 5rem;
+    }
+
+    .white__box{
+        border-radius: 50%;
+    }
+
+    /* Nav-Bar Versão Mobile: ON */
+    #mobile{
+        display: flex;
+    }
+
+    /* Nav-Bar versão Desktop: OFF */
+    #desktop{
+        display: none;
+    }
+    
     .menu{
         max-width: 45%;
     }
@@ -445,6 +478,12 @@ a{
 /* Para celulares */
 
 @media screen and (max-width: 480px){
+    
+    .frete{
+        padding: 1% 0;
+        font-size: 1rem;
+        letter-spacing: .25rem;
+    }
 
     .menu{
         max-width: 70%;
@@ -488,12 +527,23 @@ a{
         height: 260px;
     }
 
+
     /* NOVIDADES GRID */
 
-    .title{
+    #novidades{
+        display: flex;
+        margin-left: 9%;
+    }
+
+
+    .novidades .title{
         font-size: 22px;
         padding-top: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 0;
+    }
+
+    .ig__container .title{
+        padding: 30px;
     }
 
     .items__block{
@@ -506,6 +556,12 @@ a{
         height: 45vw;
     }
 
+    #item-1, #item-2, #item-3, #item-4, #item-5,
+    #item-6, #item-7, #item-8, #item-9{
+        width: 45vw;
+        height: 45vw;
+    }
+
     #item-7, #item-8, #item-9, #ig-2, #ig-3{
         display: none;
     }
@@ -514,16 +570,21 @@ a{
 
     .ig__block{
         display: inline-flex;
+        margin: 0;
+        padding: 0;
     }
 
     .ig__item{
         width: 100vw;
         height: 100vw;
+        transition: none;
+        translate: unset;
+        margin: 0;
+        padding: 0;
     }
 
     .ig__container{
-        padding-bottom: 50px;
-
+        padding: 0;
     }
 
     /* footer */
@@ -545,6 +606,12 @@ a{
     .end{
         font-size: .5rem;
         padding: 10px 0;
+    }
+
+    .white__box{
+        border-radius: 50%;
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
 }

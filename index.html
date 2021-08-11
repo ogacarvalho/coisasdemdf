@@ -44,7 +44,7 @@
     <!-- End of Menu -->
 
     <!-- Header -->
-        <section class="header" id="header">
+        <section id="mobile" class="header"> 
                 <nav class="nav-bar" id="nav-bar">
                     <div class="frete">Frete Grátis para Todo o Brasil</div>
                     <div class="nav-bar__down">
@@ -52,24 +52,38 @@
                         <i class='bx bx-menu hamburger' onclick="openMenu()"></i>
                     </div>
                 </nav>
-                <img src="assets/img/img-fundo.PNG" class="img-fundo">
+                <img src="assets/img/img-fundo.PNG" class="img-fundo" id="fundo">
         </section>
+        
+        <section id="desktop" class="header"> 
+            <nav class="nav-bar">
+                <div class="frete">Frete Grátis para Todo o Brasil</div>
+                <div class="nav-bar__down">
+                   <a href="#footer"><img src="assets/img/logo-menu.PNG" class="logo-menu"></a>
+                    <i class='bx bx-menu hamburger' onclick="openMenu()"></i>
+                </div>
+            </nav>
+            <img src="assets/img/img-fundo.PNG" class="img-fundo" id="fundo">
+    </section>
+
     <!-- End of Header -->
 
 
     <!-- News -->
-        <section class="grid__container">
-            <h1 class="title">Novidades</h1>
-            <div class="items__block">
-                <div class="item" id="item-1"></div>
-                <div class="item" id="item-2"></div> 
-                <div class="item" id="item-3"></div> 
-                <div class="item" id="item-4"></div> 
-                <div class="item" id="item-5"></div> 
-                <div class="item" id="item-6"></div> 
-                <div class="item" id="item-7"></div> 
-                <div class="item" id="item-8"></div> 
-                <div class="item" id="item-9"></div>  
+        <section class="novidades">
+            <h1 id="novidades" class="title">Novidades</h1>
+            <div class="grid__container">
+                <div class="items__block">
+                    <div class="item" id="item-1"></div>
+                    <div class="item" id="item-2"></div> 
+                    <div class="item" id="item-3"></div> 
+                    <div class="item" id="item-4"></div> 
+                    <div class="item" id="item-5"></div> 
+                    <div class="item" id="item-6"></div> 
+                    <div class="item" id="item-7"></div> 
+                    <div class="item" id="item-8"></div> 
+                    <div class="item" id="item-9"></div>  
+                </div>
             </div>
         </section>
     <!-- End of News -->
@@ -106,7 +120,7 @@
                 <a href="https://www.facebook.com/Coisas-de-MDF-105229301469630/" class='bx bxl-facebook icon' target="_blank" ></a>
                 <a href="https://www.instagram.com/coisasdemdf.com.br/" class='bx bxl-instagram icon' target="_blank" ></a>
             </div>
-            <a href="#header"><img src="assets/img/logo-menu.png"></a>  
+            <a href="#fundo"><img src="assets/img/logo-menu.png"></a>  
         </div>
         </section>
     <!-- Footer End -->
@@ -140,6 +154,20 @@
         var toggle = document.getElementById("toggleMenu");
         toggle.classList.add("hide");
     }
+
+    // Serve para fazer o scroll do menu para cima e para baixo 
+    
+        var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav-bar").style.top = "0";
+        } else {
+                document.getElementById("nav-bar").style.top = "-100%";
+            }
+                prevScrollpos = currentScrollPos;
+        }   
+
     </script>
     <!-- End of JavaScript -->
 
