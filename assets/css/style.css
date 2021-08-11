@@ -281,6 +281,7 @@ a{
 }
 #item-4:hover{
     background-image: url("../img/4-b.jpg");
+    cursor: pointer;
 }
 
 
@@ -291,6 +292,7 @@ a{
 }
 #item-5:hover{
     background-image: url("../img/5-b.png");
+    cursor: pointer;
 }
 
 
@@ -301,6 +303,7 @@ a{
 }
 #item-6:hover{
     background-image: url("../img/6-b.jpg");
+    cursor: pointer;
 }
 
 
