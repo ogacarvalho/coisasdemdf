@@ -242,7 +242,7 @@ a{
     background-size: cover;
     
 }
-#item-1:hover{
+#item-1:hover, #item-1:active{
     background-image: url("../img/1-b.jpg");
 }
 
@@ -252,7 +252,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-2:hover{
+#item-2:hover, #item-2:active{
     background-image: url("../img/2-b.png");
 }
 
@@ -262,7 +262,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-3:hover{
+#item-3:hover, #item-3:active{
     background-image: url("../img/3-b.jpg");
 }
 
@@ -272,7 +272,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-4:hover{
+#item-4:hover, #item-4:active{
     background-image: url("../img/4-b.jpg");
 }
 
@@ -282,7 +282,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-5:hover{
+#item-5:hover, #item-5:active{
     background-image: url("../img/5-b.png");
 }
 
@@ -292,7 +292,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-6:hover{
+#item-6:hover, #item-6:active{
     background-image: url("../img/6-b.jpg");
 }
 
@@ -302,7 +302,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-7:hover{
+#item-7:hover, #item-7:active{
     background-image: url("../img/7-b.jpg");
 }
 
@@ -312,7 +312,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-8:hover{
+#item-8:hover, #item-8:active{
     background-image: url("../img/8-b.jpg");
 }
 
@@ -322,7 +322,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#item-9:hover{
+#item-9:hover, #item-9:active{
     background-image: url("../img/9-b.jpg");
 }
 
