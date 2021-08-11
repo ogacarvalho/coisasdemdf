@@ -172,7 +172,7 @@ a{
     max-width: 100vw;
     width: 100%;
     height: auto;
-    transition: .9s;
+    transition: top .2s ;
 }
 
 .nav-bar__down{
@@ -440,6 +440,7 @@ a{
 
     .img-fundo{
         height: 450px;
+
     }
 
     .ig__item{
@@ -478,6 +479,10 @@ a{
 /* Para celulares */
 
 @media screen and (max-width: 480px){
+
+    .header{
+        padding-top: 80px;
+    }
     
     .frete{
         padding: 1% 0;
@@ -599,6 +604,11 @@ a{
 
     .pg__icons .icon{
         font-size: 2rem
+    }
+
+    .footer img{
+        width: 4.4rem;
+        height: 4.4rem;
     }
 
     /* End */
