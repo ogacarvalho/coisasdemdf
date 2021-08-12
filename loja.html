@@ -20,8 +20,8 @@
                 <div id="menu__inside">
                         <i class='bx bx-x exit__menu-button' onclick="exitMenu()"></i>
                     <ul>
-                        <li class="nav-links"><a href="index.html" class="current" onclick="exitMenu()">Página Inicial</a></li>
-                        <li class="nav-links"><a href="loja.html" onclick="exitMenu()">Loja</a></li>
+                        <li class="nav-links"><a href="index.html" onclick="exitMenu()">Página Inicial</a></li>
+                        <li class="nav-links"><a href="loja.html" class="current" onclick="exitMenu()">Loja</a></li>
                         <li class="nav-links"><a href="quemsomos.html" onclick="exitMenu()">Quem Somos</a></li>
                         <li class="nav-links"><a href="contato.html" onclick="exitMenu()">Contato</a></li>
                         <li class="nav-links"><a href="revenda.html" onclick="exitMenu()">Revenda</a></li>
@@ -43,33 +43,87 @@
 <!-- Cabeçalho -->
     <header>
         <section id="mobile" class="header"> 
-            <nav class="nav-bar" id="nav-bar">
-                <div class="frete">Frete Grátis para Todo o Brasil</div>
-                <div class="nav-bar__down">
-                   <a href="#footer"><img src="assets/img/logo-menu.PNG" class="logo-menu"></a>
-                    <i class='bx bx-menu hamburger' onclick="openMenu()"></i>
-                </div>
-            </nav>
-            <img src="assets/img/img-fundo.PNG" class="img-fundo" id="fundo">
-    </section>
-    <section id="desktop" class="header"> 
-        <nav class="nav-bar">
-            <div class="frete">Frete Grátis para Todo o Brasil</div>
-            <div class="nav-bar__down">
-               <a href="#footer"><img src="assets/img/logo-menu.PNG" class="logo-menu"></a>
-                <i class='bx bx-menu hamburger' onclick="openMenu()"></i>
-            </div>
-        </nav>
-        <img src="assets/img/img-fundo.PNG" class="img-fundo" id="fundo">
-    </section>
+                <nav class="nav-bar" id="nav-bar">
+                    <div class="frete">Frete Grátis para Todo o Brasil</div>
+                    <div class="nav-bar__down">
+                    <a href="#footer"><img src="assets/img/logo-menu.PNG" class="logo-menu"></a>
+                        <i class='bx bx-menu hamburger' onclick="openMenu()"></i>
+                    </div>
+                </nav>
+        </section>
+        <section id="desktop" class="header"> 
+                <nav class="nav-bar">
+                    <div class="frete">Frete Grátis para Todo o Brasil</div>
+                    <div class="nav-bar__down">
+                    <a href="#footer"><img src="assets/img/logo-menu.PNG" class="logo-menu"></a>
+                        <i class='bx bx-menu hamburger' onclick="openMenu()"></i>
+                    </div>
+                </nav>
+        </section>
     </header>
-
+    
 <!-- Conteúdo Principal -->
     <main>
-    
-
-
-        
+        <section class="main__section" id="loja">
+            <div id="section__1">
+                <h1 class="big__title">Todos<br>os<br>produtos</h1>
+                <div class="grid__container">
+                    <div class="items__block-loja">
+                        <div onclick="" class="item__loja" id="item-1"><span id="prod__description">"mapa mundi"<br>r$ 144,80</span></div>
+                        <div onclick="" class="item__loja" id="item-2"><span id="prod__description">conjunto "mapa mundi"<br>r$ 99,00</span></div> 
+                        <div onclick="" class="item__loja" id="item-3"><span id="prod__description">"mapa mundi - vazado<br>r$ 124,80</span></div> 
+                        <div onclick="" class="item__loja" id="item-4"><span id="prod__description">"deus é bom"<br>r$ 94,40</span></div> 
+                        <div onclick="" class="item__loja" id="item-5"><span id="prod__description">"too shy"<br>r$ 124,80</span></div> 
+                        <div onclick="" class="item__loja" id="item-6"><span id="prod__description">"love yourself"<br>r$ 96,12</span></div> 
+                        <div onclick="" class="item__loja" id="item-7"><span id="prod__description">"united love"<br>r$ 89,92</span></div> 
+                        <div onclick="" class="item__loja" id="item-8"><span id="prod__description">"together"<br>r$ 94,80</span></div> 
+                    </div>
+                    <p id="ver__mais">Ver mais</p>
+                </div>
+            </div>
+            <div id="section__1">
+                <h1 class="big__title">Mandalas</h1>
+                <div class="grid__container">
+                    <div class="items__block-mandalas">
+                        <div onclick="" class="item__mandala" id="item-1"></div>
+                        <div onclick="" class="item__mandala" id="item-2"></div> 
+                        <div onclick="" class="item__mandala" id="item-3"></div> 
+                    </div>
+                </div>
+            </div>
+            <div id="section__1">
+                <h1 class="big__title">Frases e<br>
+                Palavras</h1>
+                <div class="grid__container">
+                    <div class="items__block-mandalas">
+                        <div onclick="" class="item__mandala" id="item-1"></div>
+                        <div onclick="" class="item__mandala" id="item-2"></div> 
+                        <div onclick="" class="item__mandala" id="item-3"></div> 
+                    </div>
+                </div>
+            </div>
+            <div id="section__1">
+                <h1 class="big__title">Hexágonos</h1>
+                <div class="grid__container">
+                    <div class="items__block-mandalas">
+                        <div onclick="" class="item__mandala" id="item-1"></div>
+                        <div onclick="" class="item__mandala" id="item-2"></div> 
+                        <div onclick="" class="item__mandala" id="item-3"></div> 
+                    </div>
+                </div>
+                <div id="section__1">
+                    <h1 class="big__title">Quadros</h1>
+                    <div class="grid__container">
+                        <div class="items__block-mandalas">
+                            <div onclick="" class="item__mandala" id="item-1"></div>
+                            <div onclick="" class="item__mandala" id="item-2"></div> 
+                            <div onclick="" class="item__mandala" id="item-3"></div> 
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+ 
     </main>
 
 <!-- Rodapé -->
