@@ -2,27 +2,20 @@
 <html lang="pt">
 <head>
     <title>Coisas de MDF | Simples e Criativo</title>
-    <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">  
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <!-- Link para Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
 </head>
 
 <body>
-
-
-    <!-- Start of Menu -->
-        <menu id="toggleMenu" class="menu__container hide" onclick="exitMenu()">
+<!-- Menu -->
+    <menu id="toggleMenu" class="menu__container hide" onclick="exitMenu()">
             <div class="menu">
                 <div id="menu__inside">
                         <i class='bx bx-x exit__menu-button' onclick="exitMenu()"></i>
@@ -40,22 +33,17 @@
                     </div>
                 </div>
             </div>
-        </menu>
-    <!-- End of Menu -->
+    </menu>
 
-    <!-- Header -->
+<!-- ChatBox -->
+    <chat class="white__box">
+        <a href="https://api.whatsapp.com/send?phone=5512981173031" id="chat__icon" class='bx bxs-message-rounded-detail bx-tada-hover' target="_blank" ></a>
+    </chat>
+
+<!-- Cabeçalho -->
+    <header>
         <section id="mobile" class="header"> 
-                <nav class="nav-bar" id="nav-bar">
-                    <div class="frete">Frete Grátis para Todo o Brasil</div>
-                    <div class="nav-bar__down">
-                       <a href="#footer"><img src="assets/img/logo-menu.PNG" class="logo-menu"></a>
-                        <i class='bx bx-menu hamburger' onclick="openMenu()"></i>
-                    </div>
-                </nav>
-                <img src="assets/img/img-fundo.PNG" class="img-fundo" id="fundo">
-        </section>
-        <section id="desktop" class="header"> 
-            <nav class="nav-bar">
+            <nav class="nav-bar" id="nav-bar">
                 <div class="frete">Frete Grátis para Todo o Brasil</div>
                 <div class="nav-bar__down">
                    <a href="#footer"><img src="assets/img/logo-menu.PNG" class="logo-menu"></a>
@@ -64,11 +52,21 @@
             </nav>
             <img src="assets/img/img-fundo.PNG" class="img-fundo" id="fundo">
     </section>
+    <section id="desktop" class="header"> 
+        <nav class="nav-bar">
+            <div class="frete">Frete Grátis para Todo o Brasil</div>
+            <div class="nav-bar__down">
+               <a href="#footer"><img src="assets/img/logo-menu.PNG" class="logo-menu"></a>
+                <i class='bx bx-menu hamburger' onclick="openMenu()"></i>
+            </div>
+        </nav>
+        <img src="assets/img/img-fundo.PNG" class="img-fundo" id="fundo">
+    </section>
+    </header>
 
-    <!-- End of Header -->
+<!-- Conteúdo Principal -->
+    <main>
 
-
-    <!-- News -->
         <section class="novidades">
             <h1 id="novidades" class="title">Novidades</h1>
             <div class="grid__container">
@@ -85,10 +83,7 @@
                 </div>
             </div>
         </section>
-    <!-- End of News -->
 
-
-    <!-- Our Instagram -->
         <section class="ig__container">
             <h1 class="title">Nosso Instagram</h1>
                 <a class="ig__block" href="https://www.instagram.com/coisasdemdf.com.br/" target="_blank">
@@ -97,10 +92,10 @@
                     <div class="ig__item" id="ig-3"></div>
                 </a>
         </section>
-    <!-- End of Our Instagram -->
+    </main>
 
-
-    <!-- Footer -->
+<!-- Rodapé -->
+    <footer>
         <section id="footer">
             <div class="footer">
             <ul class="footer__links">
@@ -122,17 +117,7 @@
             <a href="#desktop"><img src="assets/img/logo-menu.png"></a>  
         </div>
         </section>
-    <!-- Footer End -->
 
-
-     <!-- ChatBox -->
-     <div class="white__box">
-        <a href="https://api.whatsapp.com/send?phone=5512981173031" id="chat__icon" class='bx bxs-message-rounded-detail bx-tada-hover' target="_blank" ></a>
-    </div>
-<!-- End of ChatBox  -->
-
-
-    <!-- Important -->
         <section class="end">
             <div class="end__text">
                 <p>©2020 por Coisas de  MDF. Cutting Laser  - CPF/CNPJ: 24.245.811/0001-10 - Al. dos Ingás, 46, Feiticeira, Ilhabela, SP 11630-000. </p>
@@ -140,22 +125,31 @@
                 <p>Prazo estimado para entrega de até 7 dias úteis após a postagem.</p>
             </div>
         </section>
-    <!-- End of Important -->
-
-
-    <!-- JavaScript -->
+    </footer>
+        
+<!-- Código JavaScript -->
     <script>
+
+        // Toggle para o Menu
         function openMenu() {
         var toggle = document.getElementById("toggleMenu");
         toggle.classList.remove("hide");
-    }
+        };
+
         function exitMenu() {
         var toggle = document.getElementById("toggleMenu");
         toggle.classList.add("hide");
-    }
+        };
 
-    // Solução inicial, mas da problema no bouncing do safari.
+        // Hide on Scroll
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+        return document.querySelector('.nav-bar').style.top = "-100%";
+        }
+        return document.querySelector('.nav-bar').style.top ="0"
+        });
 
+    // Uma segunda solução, porém da problema no boucing do Safari
         // var scrollingY = window.pageYOffset;
         // window.onscroll = function() {
         // var posAtual = window.pageYOffset;
@@ -166,18 +160,8 @@
         // }
         // scrollingY = posAtual;
         // }
-        
-        window.addEventListener('scroll', () => {
-        if (window.scrollY > 500) {
-        return document.querySelector('.nav-bar').style.top = "-100%";
-        }
-        return document.querySelector('.nav-bar').style.top ="0"
-
-        });
 
     </script>
-    <!-- End of JavaScript -->
-
 
 </body>
 </html>
