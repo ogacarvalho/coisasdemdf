@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <title>Coisas de MDF | Simples e Criativo</title>
+    <title>Coisas de MDF | Loja </title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">  
@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+
+    <!-- Library de Animação https://michalsnik.github.io/aos/ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -66,7 +69,7 @@
     <main>
         <section class="main__section" id="loja">
             <div id="section__1">
-                <h1 class="big__title">Todos<br>os<br>produtos</h1>
+                <h1 class="big__title" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Todos<br>os<br>produtos</h1>
                 <div class="grid__container">
                     <div class="items__block-loja">
                         <div onclick="" class="item__loja" id="item-1"><span id="prod__description">"mapa mundi"<br>r$ 144,80</span></div>
@@ -81,43 +84,61 @@
                     <p id="ver__mais">Ver mais</p>
                 </div>
             </div>
-            <div id="section__1">
-                <h1 class="big__title">Mandalas</h1>
-                <div class="grid__container">
-                    <div class="items__block-mandalas">
+            <div id="section__1" >
+                <h1 class="big__title" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Mandalas</h1>
+                <div class="grid__container-loja">
+                    <i class='bx bx-left-arrow-alt' id="seta-esquerda"></i>
+                    <i class='bx bx-right-arrow-alt' id="seta-direita"></i>
+                    <div class="items__block-mandalas" >
                         <div onclick="" class="item__mandala" id="item-1"></div>
                         <div onclick="" class="item__mandala" id="item-2"></div> 
-                        <div onclick="" class="item__mandala" id="item-3"></div> 
+                        <div onclick="" class="item__mandala" id="item-3"></div>
+                        <div onclick="" class="item__mandala" id="item-4"></div>
+                        <div onclick="" class="item__mandala" id="item-5"></div> 
+                        <div onclick="" class="item__mandala" id="item-6"></div>
+                        <div onclick="" class="item__mandala" id="item-7"></div>  
                     </div>
                 </div>
             </div>
             <div id="section__1">
-                <h1 class="big__title">Frases e<br>
+                <h1 class="big__title" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Frases e<br>
                 Palavras</h1>
                 <div class="grid__container">
-                    <div class="items__block-mandalas">
+                    <div class="items__block-frases">
                         <div onclick="" class="item__mandala" id="item-1"></div>
                         <div onclick="" class="item__mandala" id="item-2"></div> 
-                        <div onclick="" class="item__mandala" id="item-3"></div> 
+                        <div onclick="" class="item__mandala" id="item-3"></div>
+                        <div onclick="" class="item__mandala" id="item-4"></div>
+                        <div onclick="" class="item__mandala" id="item-5"></div> 
+                        <div onclick="" class="item__mandala" id="item-6"></div>
+                        <div onclick="" class="item__mandala" id="item-7"></div> 
                     </div>
                 </div>
             </div>
             <div id="section__1">
-                <h1 class="big__title">Hexágonos</h1>
+                <h1 class="big__title" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Hexágonos</h1>
                 <div class="grid__container">
-                    <div class="items__block-mandalas">
+                    <div class="items__block-hexa">
                         <div onclick="" class="item__mandala" id="item-1"></div>
                         <div onclick="" class="item__mandala" id="item-2"></div> 
-                        <div onclick="" class="item__mandala" id="item-3"></div> 
+                        <div onclick="" class="item__mandala" id="item-3"></div>
+                        <div onclick="" class="item__mandala" id="item-4"></div>
+                        <div onclick="" class="item__mandala" id="item-5"></div> 
+                        <div onclick="" class="item__mandala" id="item-6"></div>
+                        <div onclick="" class="item__mandala" id="item-7"></div> 
                     </div>
                 </div>
-                <div id="section__1">
-                    <h1 class="big__title">Quadros</h1>
+                <div id="section__1" >
+                    <h1 class="big__title" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Quadros</h1>
                     <div class="grid__container">
-                        <div class="items__block-mandalas">
+                        <div class="items__block-quadros">
                             <div onclick="" class="item__mandala" id="item-1"></div>
                             <div onclick="" class="item__mandala" id="item-2"></div> 
-                            <div onclick="" class="item__mandala" id="item-3"></div> 
+                            <div onclick="" class="item__mandala" id="item-3"></div>
+                            <div onclick="" class="item__mandala" id="item-4"></div>
+                            <div onclick="" class="item__mandala" id="item-5"></div> 
+                            <div onclick="" class="item__mandala" id="item-6"></div>
+                            <div onclick="" class="item__mandala" id="item-7"></div> 
                         </div>
                     </div>
             </div>
@@ -181,6 +202,9 @@
         return document.querySelector('.nav-bar').style.top ="0"
         });
     </script>
+    <!-- Library de Animação https://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 </body>
 </html>
