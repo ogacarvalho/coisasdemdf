@@ -69,7 +69,7 @@ a{
     .hide{
         display: none;
     }
-    
+
     .exit__menu-button{
         position: absolute;
         top: 1%;
@@ -359,6 +359,7 @@ a{
     #item-9:hover{
         background-image: url("../img/9-b.jpg");
     }
+
     
     .ig__container{
         display: flex;
@@ -657,33 +658,63 @@ a{
 }
 
 
+
                         /* Loja.html */
 /* Para computadores */
 @media screen and (max-width: 3000px){
 
-    #section__1{
+    #loja{
+        margin-top: 5rem;
+    }
+
+    #sections{
         margin-bottom: 100px;
     }
 
-    #ver__mais{
-        margin-top: 100px;
-        background-color: rgb(235, 235, 235);
-        color: rgb(155, 155, 155);
-        padding: 12px 22px;
-        border-radius: 20px;
-        font-weight: bolder;
-        font-size: .9rem;
-        transition: .2s;
-        text-transform: none;
-        font-family: "avenirlight", sans-serif;
+    .big__title{
+        display: flex;
+        margin-left: 2rem;
+        letter-spacing: .26rem;
+        font-size: 4rem;
+        font-family: 'Lulo', sans-serif;
+        font-weight: 800;
+        color: lightgrey;
+        line-height: 1;
+        margin-bottom: 2rem;
     }
 
-    #ver__mais:hover{
-        opacity: 70%;
+    .grid__container-loja{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: start;
+        width: 100%;
+        max-width: 100vw;
+        margin-bottom: 50px;
     }
 
-    #loja{
-        margin-top: 5rem;
+    .items__block-loja{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 10px 0;
+        gap: 5rem 20px;
+    }
+
+    .items__block-oculta{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 70px 0 100px 0;
+        gap: 5rem 20px;
+    }
+
+    .oculto{
+        display: none;
+    }
+    
+    .item__loja{
+        width: 23vw;
+        height: 23vw;
+        cursor: pointer;
     }
 
     #prod__description{
@@ -700,44 +731,78 @@ a{
         letter-spacing: .05rem;
         line-height: 1.1rem;
     }
-    
 
-    .big__title{
-        display: flex;
-        margin-left: 2rem;
-        letter-spacing: .26rem;
-        font-size: 4rem;
-        font-family: 'Lulo', sans-serif;
-        font-weight: 800;
-        color: lightgrey;
-        line-height: 1;
-        margin-bottom: 2rem;
+    #prod__description:hover{
+        color: grey;
     }
 
-    .item__loja{
-        width: 23vw;
-        height: 23vw;
-        cursor: pointer;
+    .ver__menos{
+        width: 100%;
+        height: 100%;
+        max-width: 103px;
+        max-height: 38px;
+        margin-top: 30px;
+        background-color: rgb(235, 235, 235);
+        color: rgb(155, 155, 155);
+        padding: 12px 14px;
+        border-radius: 20px;
+        font-weight: bolder;
+        font-size: .9rem;
+        transition: .2s;
+        text-transform: none;
+        font-family: "avenirlight", sans-serif;
     }
 
-    .items__block-loja{
+    .ver__mais{
+        width: 100%;
+        height: 100%;
+        max-width: 103px;
+        max-height: 38px;
+        margin-top: 100px;
+        background-color: rgb(235, 235, 235);
+        color: rgb(155, 155, 155);
+        padding: 12px 22px;
+        border-radius: 20px;
+        font-weight: bolder;
+        font-size: .9rem;
+        transition: .2s;
+        text-transform: none;
+        font-family: "avenirlight", sans-serif;
+    }
+
+    .ver__mais:hover{
+        color: rgb(235, 235, 235);
+        background-color: rgb(155, 155, 155);
+        transition: .2s;
+    }
+
+    .ver__menos:hover{
+        color: rgb(235, 235, 235);
+        background-color: rgb(155, 155, 155);
+        transition: .2s;
+    }
+
+    .items__block-mandalas, .items__block-frases, .items__block-hexa, .items__block-quadros{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         margin: 10px 0;
         gap: 5rem 20px;
     }
 
-
-    .grid__container-loja{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        align-items: start;
-        width: 100%;
-        max-width: 100vw;
-        margin-bottom: 50px;
+    .items__block-mandalas, .items__block-frases, .items__block-hexa, .items__block-quadros{
+        animation-name: slider-direita;
+        animation-duration: 13s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
     }
 
+    .items__loja{
+        width: 30vw;
+        height: 30vw;
+        cursor: pointer;
+    }
+    
     #seta-direita{
         position: absolute;
         margin-top: 14%;
@@ -751,16 +816,9 @@ a{
         cursor: pointer;
     }
 
-    .items__block-mandalas{
-        animation-name: slider-direita;
-        animation-duration: 15s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-play-state: paused;
-    }
-
-    #seta-direita:hover ~ .items__block-mandalas {
-        animation-play-state: running;
+    #seta-direita:active{
+        transition: linear;
+        transform: translateX(5px);
     }
 
     #seta-direita:hover{
@@ -769,6 +827,10 @@ a{
         background: grey;
     }
 
+    #seta-direita:hover ~ .items__block-mandalas, #seta-direita:hover ~ .items__block-frases,
+    #seta-direita:hover ~ .items__block-hexa, #seta-direita:hover ~ .items__block-quadros{
+        animation-play-state: running;
+    }
 
     @keyframes slider-direita {
         0% {
@@ -776,7 +838,7 @@ a{
         }
 
         50%{
-            transform: translateX(-1700px);
+            transform: translateX(-1800px);
         }
 
         100%{
@@ -784,41 +846,4 @@ a{
         }
     }
 
-
-
-
-    .items__block-mandalas{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        margin: 10px 0;
-        gap: 5rem 20px;
-    }
-
-    .item__mandala{
-        width: 30vw;
-        height: 30vw;
-        cursor: pointer;
-    }
-
-
-    .items__block-frases{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        margin: 10px 0;
-        gap: 5rem 20px;
-    }
-
-    .items__block-hexa{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        margin: 10px 0;
-        gap: 5rem 20px;
-    }
-
-    .items__block-quadros{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        margin: 10px 0;
-        gap: 5rem 20px;
-    }
 }

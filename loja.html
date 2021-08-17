@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <a id="top"></a>
 <!-- Menu -->
     <menu id="toggleMenu" class="menu__container hide" onclick="exitMenu()">
             <div class="menu">
@@ -68,8 +69,8 @@
 <!-- Conteúdo Principal -->
     <main>
         <section class="main__section" id="loja">
-            <div id="section__1">
-                <h1 class="big__title" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Todos<br>os<br>produtos</h1>
+            <div id="sections">
+                <h1 id="inicio" class="big__title" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">Todos<br>os<br>produtos</h1>
                 <div class="grid__container">
                     <div class="items__block-loja">
                         <div onclick="" class="item__loja" id="item-1"><span id="prod__description">"mapa mundi"<br>r$ 144,80</span></div>
@@ -79,66 +80,87 @@
                         <div onclick="" class="item__loja" id="item-5"><span id="prod__description">"too shy"<br>r$ 124,80</span></div> 
                         <div onclick="" class="item__loja" id="item-6"><span id="prod__description">"love yourself"<br>r$ 96,12</span></div> 
                         <div onclick="" class="item__loja" id="item-7"><span id="prod__description">"united love"<br>r$ 89,92</span></div> 
-                        <div onclick="" class="item__loja" id="item-8"><span id="prod__description">"together"<br>r$ 94,80</span></div> 
+                        <div onclick="" class="item__loja" id="item-8"><span id="prod__description">"together"<br>r$ 94,80</span></div>
                     </div>
-                    <p id="ver__mais">Ver mais</p>
+                    <div class="items__block-oculta oculto" id="verMais"> 
+                        <div onclick="" class="item__loja" id="item-1"><span id="prod__description">"mapa mundi"<br>r$ 144,80</span></div>
+                        <div onclick="" class="item__loja" id="item-2"><span id="prod__description">conjunto "mapa mundi"<br>r$ 99,00</span></div> 
+                        <div onclick="" class="item__loja" id="item-3"><span id="prod__description">"mapa mundi - vazado<br>r$ 124,80</span></div> 
+                        <div onclick="" class="item__loja" id="item-4"><span id="prod__description">"deus é bom"<br>r$ 94,40</span></div> 
+                        <div onclick="" class="item__loja" id="item-5"><span id="prod__description">"too shy"<br>r$ 124,80</span></div> 
+                        <div onclick="" class="item__loja" id="item-6"><span id="prod__description">"love yourself"<br>r$ 96,12</span></div> 
+                        <div onclick="" class="item__loja" id="item-7"><span id="prod__description">"united love"<br>r$ 89,92</span></div> 
+                        <div onclick="" class="item__loja" id="item-8"><span id="prod__description">"together"<br>r$ 94,80</span></div>
+                        <div onclick="" class="item__loja" id="item-1"><span id="prod__description">"mapa mundi"<br>r$ 144,80</span></div>
+                        <div onclick="" class="item__loja" id="item-2"><span id="prod__description">conjunto "mapa mundi"<br>r$ 99,00</span></div> 
+                        <div onclick="" class="item__loja" id="item-3"><span id="prod__description">"mapa mundi - vazado<br>r$ 124,80</span></div> 
+                        <div onclick="" class="item__loja" id="item-4"><span id="prod__description">"deus é bom"<br>r$ 94,40</span></div> 
+                        <div onclick="" class="item__loja" id="item-5"><span id="prod__description">"too shy"<br>r$ 124,80</span></div> 
+                        <div onclick="" class="item__loja" id="item-6"><span id="prod__description">"love yourself"<br>r$ 96,12</span></div> 
+                        <div onclick="" class="item__loja" id="item-7"><span id="prod__description">"united love"<br>r$ 89,92</span></div> 
+                        <div onclick="" class="item__loja" id="item-8"><span id="prod__description">"together"<br>r$ 94,80</span></div>
+                    </div>
+                    <p id="ver__mais" class="ver__mais" onclick="multipleFunc()">Ver mais</p>
+                    <p id="ver__menos" class="ver__menos oculto" onclick="multipleFuncMenos()"><a href="#top">Ver menos</a></p>
                 </div>
             </div>
-            <div id="section__1" >
-                <h1 class="big__title" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Mandalas</h1>
+            <div id="sections" >
+                <h1 class="big__title" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">Mandalas</h1>
                 <div class="grid__container-loja">
-                    <i class='bx bx-left-arrow-alt' id="seta-esquerda"></i>
                     <i class='bx bx-right-arrow-alt' id="seta-direita"></i>
                     <div class="items__block-mandalas" >
-                        <div onclick="" class="item__mandala" id="item-1"></div>
-                        <div onclick="" class="item__mandala" id="item-2"></div> 
-                        <div onclick="" class="item__mandala" id="item-3"></div>
-                        <div onclick="" class="item__mandala" id="item-4"></div>
-                        <div onclick="" class="item__mandala" id="item-5"></div> 
-                        <div onclick="" class="item__mandala" id="item-6"></div>
-                        <div onclick="" class="item__mandala" id="item-7"></div>  
+                        <div onclick="" class="items__loja" id="item-1"></div>
+                        <div onclick="" class="items__loja" id="item-2"></div> 
+                        <div onclick="" class="items__loja" id="item-3"></div>
+                        <div onclick="" class="items__loja" id="item-4"></div>
+                        <div onclick="" class="items__loja" id="item-5"></div> 
+                        <div onclick="" class="items__loja" id="item-6"></div>
+                        <div onclick="" class="items__loja" id="item-7"></div>  
                     </div>
                 </div>
             </div>
-            <div id="section__1">
-                <h1 class="big__title" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Frases e<br>
+            <div id="sections">
+                <h1 class="big__title" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">Frases e<br>
                 Palavras</h1>
-                <div class="grid__container">
+                <div class="grid__container-loja">
+                    <i class='bx bx-right-arrow-alt' id="seta-direita"></i>
                     <div class="items__block-frases">
-                        <div onclick="" class="item__mandala" id="item-1"></div>
-                        <div onclick="" class="item__mandala" id="item-2"></div> 
-                        <div onclick="" class="item__mandala" id="item-3"></div>
-                        <div onclick="" class="item__mandala" id="item-4"></div>
-                        <div onclick="" class="item__mandala" id="item-5"></div> 
-                        <div onclick="" class="item__mandala" id="item-6"></div>
-                        <div onclick="" class="item__mandala" id="item-7"></div> 
+                        <div onclick="" class="items__loja" id="item-1"></div>
+                        <div onclick="" class="items__loja" id="item-2"></div> 
+                        <div onclick="" class="items__loja" id="item-3"></div>
+                        <div onclick="" class="items__loja" id="item-4"></div>
+                        <div onclick="" class="items__loja" id="item-5"></div> 
+                        <div onclick="" class="items__loja" id="item-6"></div>
+                        <div onclick="" class="items__loja" id="item-7"></div> 
                     </div>
                 </div>
             </div>
-            <div id="section__1">
-                <h1 class="big__title" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Hexágonos</h1>
-                <div class="grid__container">
+            <div id="sections">
+                <h1 class="big__title" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">Hexágonos</h1>
+                <div class="grid__container-loja">
+                    <i class='bx bx-right-arrow-alt' id="seta-direita"></i>
                     <div class="items__block-hexa">
-                        <div onclick="" class="item__mandala" id="item-1"></div>
-                        <div onclick="" class="item__mandala" id="item-2"></div> 
-                        <div onclick="" class="item__mandala" id="item-3"></div>
-                        <div onclick="" class="item__mandala" id="item-4"></div>
-                        <div onclick="" class="item__mandala" id="item-5"></div> 
-                        <div onclick="" class="item__mandala" id="item-6"></div>
-                        <div onclick="" class="item__mandala" id="item-7"></div> 
+                        <div onclick="" class="items__loja" id="item-1"></div>
+                        <div onclick="" class="items__loja" id="item-2"></div> 
+                        <div onclick="" class="items__loja" id="item-3"></div>
+                        <div onclick="" class="items__loja" id="item-4"></div>
+                        <div onclick="" class="items__loja" id="item-5"></div> 
+                        <div onclick="" class="items__loja" id="item-6"></div>
+                        <div onclick="" class="items__loja" id="item-7"></div> 
                     </div>
                 </div>
                 <div id="section__1" >
-                    <h1 class="big__title" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Quadros</h1>
-                    <div class="grid__container">
+                    <h1 class="big__title" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">Quadros</h1>
+                    <div class="grid__container-loja">
+                        <i class='bx bx-right-arrow-alt' id="seta-direita"></i>
                         <div class="items__block-quadros">
-                            <div onclick="" class="item__mandala" id="item-1"></div>
-                            <div onclick="" class="item__mandala" id="item-2"></div> 
-                            <div onclick="" class="item__mandala" id="item-3"></div>
-                            <div onclick="" class="item__mandala" id="item-4"></div>
-                            <div onclick="" class="item__mandala" id="item-5"></div> 
-                            <div onclick="" class="item__mandala" id="item-6"></div>
-                            <div onclick="" class="item__mandala" id="item-7"></div> 
+                            <div onclick="" class="items__loja" id="item-1"></div>
+                            <div onclick="" class="items__loja" id="item-2"></div> 
+                            <div onclick="" class="items__loja" id="item-3"></div>
+                            <div onclick="" class="items__loja" id="item-4"></div>
+                            <div onclick="" class="items__loja" id="item-5"></div> 
+                            <div onclick="" class="items__loja" id="item-6"></div>
+                            <div onclick="" class="items__loja" id="item-7"></div> 
                         </div>
                     </div>
             </div>
@@ -152,8 +174,8 @@
         <section id="footer">
             <div class="footer">
             <ul class="footer__links">
-                <li class="footer__link">Loja</li>
-                <li class="footer__link">Blog</li>
+                <li class="footer__link"><a href="index.html">Página Inicial</a></li>
+                <li class="footer__link"><a class="current" href="loja.html">Loja</a></li>
                 <li class="footer__link">Quem Somos</li>
                 <li class="footer__link">Contato</li>
             </ul>
@@ -167,7 +189,7 @@
                 <a href="https://www.facebook.com/Coisas-de-MDF-105229301469630/" class='bx bxl-facebook icon' target="_blank" ></a>
                 <a href="https://www.instagram.com/coisasdemdf.com.br/" class='bx bxl-instagram icon' target="_blank" ></a>
             </div>
-            <a href="#desktop"><img src="assets/img/logo-menu.png"></a>  
+            <a href="#top"><img src="assets/img/logo-menu.png"></a>  
         </div>
         </section>
 
@@ -202,6 +224,59 @@
         return document.querySelector('.nav-bar').style.top ="0"
         });
     </script>
+
+    <script>
+
+    // Toggle "Ver mais"
+
+        function verMais() {
+        var verMais = document.getElementById("verMais");
+        verMais.classList.remove("oculto");
+        };
+
+        function aparecerMenos() {
+        var aparecerMenos = document.getElementById("ver__menos");
+        aparecerMenos.classList.remove("oculto");
+        };
+
+        function sumirMenos() {
+        var sumirMenos = document.getElementById("ver__menos");
+        sumirMenos.classList.add("oculto");
+        };
+
+
+        function verMaisOculto() {
+        var verMaisOculto = document.getElementById("ver__mais");
+        verMaisOculto.classList.add("oculto");
+        };
+        
+        function verMenos() {
+        var verMais = document.getElementById("verMais");
+        verMais.classList.add("oculto");
+        };
+
+        function verMaisAtivo() {
+        var verMaisOculto = document.getElementById("ver__mais");
+        verMaisOculto.classList.remove("oculto");
+        };
+
+    
+        function multipleFunc(){
+            verMais();
+            verMaisOculto();
+            aparecerMenos();
+            AOS.init();
+        }
+
+        function multipleFuncMenos(){
+            verMenos();
+            verMaisAtivo();
+            sumirMenos();
+            AOS.init();
+        }
+
+    </script>
+
     <!-- Library de Animação https://michalsnik.github.io/aos/ -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
