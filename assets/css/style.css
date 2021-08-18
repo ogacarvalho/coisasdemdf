@@ -941,8 +941,8 @@ a{
     }
 
     #seta-direita:hover{
-        transition: .5s;
-        transform: translateX(4px);
+        transition: .3s;
+        transform: translateX(6px);
         color: whitesmoke;
         background: grey;
     }
@@ -981,6 +981,10 @@ a{
 
 /* Para Celulares */
 @media screen and (max-width: 480px){
+
+    #prod__description{
+        margin-top: .7rem;
+    }
 
     #loja{
         margin-top: 3rem;
@@ -1026,7 +1030,7 @@ a{
 
     #seta-direita{
         margin-top: 20%;
-        left: 88%;
+        left: 86%;
     }
 
 }
