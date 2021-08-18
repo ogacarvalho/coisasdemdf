@@ -930,15 +930,12 @@ a{
         z-index: 9;
         font-size: 15px;
         cursor: pointer;
-    }
-
-    #seta-direita:active{
-        transition: linear;
-        transform: translateX(5px);
+        transition: .5s;
     }
 
     #seta-direita:hover{
         transition: .5s;
+        transform: translateX(4px);
         color: whitesmoke;
         background: grey;
     }
@@ -986,7 +983,7 @@ a{
         max-width: 80px;
         max-height: 30px;
         font-size: .6rem;
-        padding: 10px 12px;
+        padding: 10px 10px;
         text-align: center;
     }
 
