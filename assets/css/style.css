@@ -663,6 +663,12 @@ a{
 /* Para computadores */
 @media screen and (max-width: 3000px){
 
+    html{
+        overflow-x: hidden;
+        user-select: none;
+        user-zoom: none;
+    }
+
     /* Items */
 
     #item__1-loja{
@@ -980,7 +986,7 @@ a{
     }
 
     .ver__menos, .ver__mais{
-        max-width: 80px;
+        max-width: 90px;
         max-height: 30px;
         font-size: .6rem;
         padding: 10px 10px;
