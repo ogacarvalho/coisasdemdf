@@ -43,7 +43,7 @@
 body{
     text-transform: uppercase;
     font-family: "Anton", sans-serif;
-    overflow: auto;
+    overflow-x: hidden;
     text-decoration: none;
     list-style: none;
 }
@@ -57,6 +57,7 @@ a{
                         /* Index.html */
 /* Para Computadores */
 @media screen and (max-width: 3000px){
+
 
     #mobile{
         display: none;
@@ -663,7 +664,7 @@ a{
 /* Para computadores */
 @media screen and (max-width: 3000px){
 
-    html{
+    html, body{
         overflow-x: hidden;
         user-select: none;
         user-zoom: none;
