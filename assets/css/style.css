@@ -1120,11 +1120,14 @@ a{
 
     .text__container-quemsomos{ 
         padding: 15% 7% 25% 7%;
+        border-bottom: .5px solid grey;
     }
 
     .img__fundo-quemsomos{
-        padding: 30px 15px 15px 15px;
-
+        width: 100vw;
+        height: 100vw;
+        padding: 0;
+        margin: 0;
     }
 
 }
