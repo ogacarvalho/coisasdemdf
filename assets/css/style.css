@@ -1113,6 +1113,7 @@ a{
     }
 }
 
+/* Para Celulares */
 @media screen and (max-width: 480px){
     #title__quemsomos{
         font-size: 1.5rem;
@@ -1130,4 +1131,148 @@ a{
         margin: 0;
     }
 
+}
+
+
+                        /* contato.html */
+/* Para computadores */
+@media screen and (max-width: 3000px){
+    #contato{
+        color: var(--background-color);
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: space-around;
+        font-family: "Lulo", sans-serif;
+    }
+
+    .corpo__titulo-contato{
+        margin-top: 1rem;
+        line-height: 2rem;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: none;
+    }
+
+    #lado__direito-contato{
+        padding-top: 15vh;
+        background: whitesmoke;
+        font-size: 1rem;
+        text-align: center;
+        width: 50vw;
+    }
+
+    #lado__direito-contato h4{
+        letter-spacing: .1rem;
+        font-size: .8rem;
+    }
+
+    #lado__esquerdo-contato{
+        padding-top: 15vh;
+        font-size: 1rem;
+        text-align: center;
+        width: 50vw;
+    }
+
+    /* Formatação Input */
+
+    fieldset{
+        border: none;
+    }
+
+    .input-box{
+        margin-top: 1rem;
+        color: black;
+        font-weight: bold;
+    }
+
+    ::placeholder{
+        color: black;
+        font-weight: bold;
+    }
+
+    .input-box input{
+        margin-top: 5vh;
+        background-color: transparent;
+        font-style: none;
+        border: none;
+        border-bottom: 1px solid black;
+        line-height: 2rem;
+        color: black;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+    }
+
+    .input__loja-sup{
+        width: 34.5%;
+        margin: 0 2.5%;
+    }
+
+    #input__3{
+        width: 75%;
+    }
+
+    #input__4{
+        width: 75%;
+    }
+
+    input:hover{
+        border-bottom: 2px solid black;
+    }
+
+    .textarea__container{
+        margin-top: 40px;
+    }
+
+    textarea{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        width: 75%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid black;
+        resize: none;
+    }
+
+    textarea:hover{
+        border-bottom: 2px solid black;
+    }
+
+    #botao__ctt{
+        margin-top: 1rem;
+        width: 10rem;
+        height: 2.5rem;
+        background-color: var(--background-color);
+        color: white;
+        border: none;
+        text-decoration: none;
+        transition: .1s linear;
+    }
+
+    #botao__ctt:hover{
+        border: 1px solid black;
+        background-color: transparent;
+        color: black;
+    }
+
+    #submit{
+        margin-top: 1rem;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+
+    }
+
+    .hide__submit{
+        display: none;
+    }
+}
+
+/* Para Tablet's */
+@media screen and (max-width: 968px){
+}
+
+/* Para Celulares */
+@media screen and (max-width: 480px){
 }
