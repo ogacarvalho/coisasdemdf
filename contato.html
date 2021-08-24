@@ -66,36 +66,33 @@
     </header>
     
 <!-- Conteúdo Principal -->
-    <main>
-        <section id="contato">
-            <div id="lado__esquerdo-contato">
+    <main class="contato">
+        <section id="lado__esquerdo-contato">
                 <h1>Atendimento ao Cliente</h1>
-                <p class="corpo__titulo-contato">Tel: (12) 98117-3031<br>
-                    coisasdemdf@gmail.com</p>
-            </div>
-            <div id="lado__direito-contato">
-                <h1>Contate-nos</h1>
-                <h4>em caso de dúvidas</h4>
-                <!-- Formulário -->
-                <form action="#">
-                    <fieldset>
-                        <div class="user-details">
-                            <div class="input-box">
-                                <input class="input__loja-sup" id="input__1" type="text" placeholder="Nome" required>
-                                <input class="input__loja-sup" id="input__2" type="text" placeholder="Sobrenome" required>
-                                <input id="input__3" type="text" placeholder="Assunto" required>
-                                <div class="textarea__container">
-                                    <textarea placeholder="Digite sua mensagem aqui..." name="Texto-1" rows="6"></textarea>
+                <p class="corpo__titulo-contato">Tel: (12) 98117-3031<br>coisasdemdf@gmail.com</p>
+            </section>
+            <section id="lado__direito-contato">
+                    <h1>Contate-nos</h1>
+                    <h4>em caso de dúvidas</h4>
+
+                    <!-- Formulário -->
+                    <div class="form__container">
+                        <fieldset>
+                            <div class="user-details">
+                                <div class="input-box">
+                                    <input class="input__loja-sup" id="input__1" type="text" placeholder="Nome" required>
+                                    <input class="input__loja-sup" id="input__2" type="text" placeholder="Sobrenome" required>
+                                    <input id="input__3" type="text" placeholder="Assunto" required>
+                                    <div class="textarea__container">
+                                        <textarea placeholder="Digite sua mensagem aqui..." name="Texto-1" rows="6"></textarea>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </fieldset>
-                    <button id="botao__ctt" type="submit" onclick="submitSucess()">Enviar</button>
+                        </fieldset>
+                        <button id="botao__ctt" type="submit" onclick="submitSucess()">Enviar</button>
                     <span id="submit" class="hide__submit"><br>Recebemos sua mensagem!</span>
-
-                </form>
-            </div>
-        </section>
+                </div>
+            </section>
     </main>
 
 <!-- Rodapé -->

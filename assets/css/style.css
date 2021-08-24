@@ -56,8 +56,8 @@ a{
 
 
 
-                        /* Index.html */
-/* Para Computadores */
+/* ---------------------------------------------------- Index.html */
+
 @media screen and (max-width: 3000px){
 
 
@@ -470,7 +470,6 @@ a{
 
 }
 
-/* Para Tablet's */
 @media screen and (max-width: 968px) { 
 
     .img-fundo{
@@ -511,7 +510,6 @@ a{
     }
 }
 
-/* Para celulares */
 @media screen and (max-width: 480px){
 
     .header{
@@ -662,8 +660,8 @@ a{
 
 
 
-                        /* Loja.html */
-/* Para computadores */
+/* ---------------------------------------------------- Loja.html */
+
 @media screen and (max-width: 3000px){
 
     /* Items */
@@ -963,7 +961,6 @@ a{
 
 }
 
-/* Para Tablet's */
 @media screen and (max-width: 968px){
     .big__title{
         font-size: 3.3rem;
@@ -974,7 +971,6 @@ a{
     }
 }
 
-/* Para Celulares */
 @media screen and (max-width: 480px){
 
     #prod__description{
@@ -1031,8 +1027,8 @@ a{
 }
 
 
-                        /* quemsomos.html */
-/* Para computadores */
+/* ---------------------------------------------------- Quemsomos.html */
+
 @media screen and (max-width: 3000px){
 
     #title__quemsomos{
@@ -1085,7 +1081,6 @@ a{
     }
 }
 
-/* Para Tablet's */
 @media screen and (max-width: 968px){
     #title__quemsomos{
         font-size: 2rem;
@@ -1113,7 +1108,6 @@ a{
     }
 }
 
-/* Para Celulares */
 @media screen and (max-width: 480px){
     #title__quemsomos{
         font-size: 1.5rem;
@@ -1134,17 +1128,15 @@ a{
 }
 
 
-                        /* contato.html */
-/* Para computadores */
+/* ---------------------------------------------------- Contato.html */
+
 @media screen and (max-width: 3000px){
-    #contato{
-        color: var(--background-color);
+
+    .contato{
         display: flex;
-        height: 100vh;
-        width: 100vw;
-        justify-content: space-around;
+        color: var(--background-color);
         font-family: "Lulo", sans-serif;
-    }
+    }    
 
     .corpo__titulo-contato{
         margin-top: 1rem;
@@ -1156,7 +1148,7 @@ a{
     }
 
     #lado__direito-contato{
-        padding-top: 15vh;
+        padding: 15vh 10px;
         background: whitesmoke;
         font-size: 1rem;
         text-align: center;
@@ -1169,7 +1161,7 @@ a{
     }
 
     #lado__esquerdo-contato{
-        padding-top: 15vh;
+        padding: 15vh 10px;
         font-size: 1rem;
         text-align: center;
         width: 50vw;
@@ -1269,10 +1261,139 @@ a{
     }
 }
 
-/* Para Tablet's */
 @media screen and (max-width: 968px){
+    section h1{
+        font-size: 1.1rem;
+    }
 }
 
-/* Para Celulares */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
+
+    .contato{
+        display: block;
+    }
+    
+
+    #lado__esquerdo-contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 70px 0 50px 0;
+        height: 100%;
+        width: 100vw;
+    }
+
+    #lado__direito-contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0 100px 0;
+        width: 100vw;
+    }
+}
+
+
+/* ---------------------------------------------------- Revenda.html */
+
+
+@media screen and (max-width: 3000px){
+
+    .cta__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        color: lightgray;
+        font-family: "Lulo", sans-serif;
+    }
+
+    #title__revenda{
+        font-size: 4rem;
+    }
+
+    .cta__div{
+        display: flex;
+    }
+
+    #bx__chat-revenda{
+        font-size: 18rem;
+        transition: .1s linear;
+    }
+    
+    #bx__chat-revenda:hover{
+        color: grey;
+        cursor: pointer;
+    }
+
+    #p__chat-revenda{
+        position: absolute;
+        margin-top: 11vh;
+        right: 12vw;
+        text-align: right;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+
+    #title__revenda{
+        font-size: 3rem;
+    }
+
+    .cta__container{
+        height: 100%;
+        margin: 200px 0;
+    }
+
+    
+    #bx__chat-revenda{
+        font-size: 12rem;
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #p__chat-revenda{
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .7rem;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    #seta__cta{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 468px){
+    #title__revenda{
+        font-size: 1.8rem;
+    }
+    
+    #bx__chat-revenda{
+        font-size: 9rem;
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #p__chat-revenda{
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 10px 0;
+        font-size: .6rem;
+    }
 }
