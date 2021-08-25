@@ -1336,7 +1336,6 @@ a{
 
 }
 
-
 @media screen and (max-width: 768px){
 
     #title__revenda{
@@ -1404,6 +1403,7 @@ a{
 
 @media screen and (max-width: 3000px){
 
+
     .big__title-personalizado{
         display: flex;
         margin-left: 2rem;
@@ -1425,9 +1425,121 @@ a{
         font-family: 'Lulo', sans-serif;
         font-size: .7rem;
         margin-left: 2rem;
+        margin-bottom: 2rem;
     }
 
     #title_personalizado{
         font-size: 4rem;
     }
+
+    /* items Personalizado */
+
+    .items__personalizado{
+        width: 32vw;
+        height: 32vw;
+        cursor: pointer;
+    }
+
+    #seta__direita-personalizado{
+        position: absolute;
+        margin-top: 15.5%;
+        left: 95%;
+        background: whitesmoke;
+        border-radius: 50%;
+        padding: 10px;
+        color: grey;
+        z-index: 9;
+        font-size: 15px;
+        transition: .5s;
+    }
+
+    #seta__direita-personalizado:hover{
+        transition: .3s;
+        transform: translateX(6px);
+        color: whitesmoke;
+        background: grey;
+    }
+
+    #seta__direita-personalizado:hover ~ .items__block-mandalas{
+        animation-play-state: running;
+    }
+
+    #item__1-personalizado{
+        background-image: url("../img/personalizado/mulher-perso-min.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .1s ease-in-out;
+        
+    }
+    #item__1-personalizado:hover{
+        opacity: .5;
+    }
+    
+    
+    #item__2-personalizado{
+        background-image: url("../img/personalizado/hexa-perso-min.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .1s ease-in-out;
+    
+    }
+    #item__2-personalizado:hover{
+        opacity: .5;
+    }
+    
+    
+    #item__3-personalizado{
+        background-image: url("../img/personalizado/maos-perso-min.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .1s ease-in-out;
+    }
+    #item__3-personalizado:hover{
+        opacity: .5;
+    }
+    
+    
+    #item__4-personalizado{
+        background-image: url("../img/personalizado/brinco01-perso-min.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .1s ease-in-out;
+    }
+    #item__4-personalizado:hover{
+        opacity: .5;
+    }
+    
+    
+    #item__5-personalizado{
+        background-image: url("../img/personalizado/olhos-perso-min.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .1s ease-in-out;
+    }
+    #item__5-personalizado:hover{
+        opacity: .5;
+    }
+    
+    
+    #item__6-personalizado{
+        background-image: url("../img/personalizado/seja-luz-perso-min.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .1s ease-in-out;
+    }
+    #item__6-personalizado:hover{
+        opacity: .5;
+    }
+
+    #bx__chat-personalizado{
+        font-size: 18rem;
+        transition: .1s linear;
+        color: darkred;
+    }
+    
+    #bx__chat-personalizado:hover{
+        opacity: .5;
+        cursor: pointer;
+    }
+    
 }
