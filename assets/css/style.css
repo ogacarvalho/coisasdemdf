@@ -659,7 +659,6 @@ a{
 }
 
 
-
 /* ---------------------------------------------------- Loja.html */
 
 @media screen and (max-width: 3000px){
@@ -1296,7 +1295,6 @@ a{
 
 /* ---------------------------------------------------- Revenda.html */
 
-
 @media screen and (max-width: 3000px){
 
     .cta__container{
@@ -1400,9 +1398,7 @@ a{
 
 /* ---------------------------------------------------- Personalizado.html */
 
-
 @media screen and (max-width: 3000px){
-
 
     .big__title-personalizado{
         display: flex;
@@ -1541,5 +1537,104 @@ a{
         opacity: .5;
         cursor: pointer;
     }
+
+    #p__chat-personalizado{
+        position: relative;
+        top: 13vh;
+        right: -3vw;
+    }
     
+}
+
+@media screen and (max-width: 968px){
+    #bx__chat-personalizado{
+        font-size: 12rem;
+    }
+
+    #p__chat-personalizado{
+        position: relative;
+        top: 3vh;
+        right: -3vw;
+    }
+
+    #title__personalizado{
+        font-size: 2rem;
+    }
+
+    #p__title-personalizado{
+        font-size: .5rem;
+    }
+
+    .items__personalizado{
+        width: 32vw;
+        height: 32vw;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 468px){
+    #bx__chat-personalizado{
+        font-size: 9rem;
+        margin: 0 0 1rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #p__chat-personalizado{
+        font-size: .8rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #title__personalizado{
+        font-size: 1.2rem;
+    }
+
+    #p__title-personalizado{
+        display: none;
+    }
+
+    .items__personalizado{
+        width: 100vw;
+        height: 100vw;
+        cursor: pointer;
+    }
+
+    .big__title-personalizado{
+        justify-content: center;
+        margin: 2rem 0 0 0;
+    }
+
+    #seta__direita-personalizado{
+        margin-top: 46%;
+        left: 85%;
+    }
+
+    .items__block-mandalas{
+        animation-duration: 20s;
+    }
+
+    .cta__container{
+        height: 0;
+    }
+
+    .cta__div{
+        display: block;
+    }
+
+    @keyframes slider-direita {
+        0% {
+            transform: translateX(auto);
+        }
+
+        50%{
+            transform: translateX(-85%);
+        }
+
+        100%{
+            transform: translateX(0%);
+        }
+    }
 }
