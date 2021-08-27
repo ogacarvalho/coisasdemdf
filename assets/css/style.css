@@ -283,7 +283,7 @@ a{
     
     }
     #item-2:hover{
-        background-image: url("../img/2-b.png");
+        background-image: url("../img/2-b.jpg");
     }
     
     
@@ -316,7 +316,7 @@ a{
         transition: .5s ease-in-out;
     }
     #item-5:hover{
-        background-image: url("../img/5-b.png");
+        background-image: url("../img/5-b.jpg");
     }
     
     
@@ -393,7 +393,7 @@ a{
     
     
     #ig-1{
-        background-image: url("../img/2-b.png");
+        background-image: url("../img/2-b.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -685,7 +685,7 @@ a{
     
     }
     #item__2-loja:hover{
-        background-image: url("../img/2-b.png");
+        background-image: url("../img/2-b.jpg");
     }
     
     
@@ -718,7 +718,7 @@ a{
         transition: .5s ease-in-out;
     }
     #item__5-loja:hover{
-        background-image: url("../img/5-b.png");
+        background-image: url("../img/5-b.jpg");
     }
     
     
