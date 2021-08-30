@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Coisas de MDF | Quem Somos! </title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>  
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'/>
+    <link rel="icon" type="image/png" href="assets/img/inicial/favicon.png"/>
+</head>
+
+<body><a id="top"></a>
+
+    <menu id="toggleMenu" class="menu__container hide" onclick="exitMenu()">
+            <div class="menu">
+                <div id="menu__inside">
+                        <i class='bx bx-x exit__menu-button' onclick="exitMenu()"></i>
+                    <ul>
+                        <li class="nav-links"><a href="index.html" onclick="exitMenu()">Página Inicial</a></li>
+                        <li class="nav-links"><a href="loja.html" onclick="exitMenu()">Loja</a></li>
+                        <li class="nav-links"><a href="quemsomos.html" class="current" onclick="exitMenu()">Quem Somos</a></li>
+                        <li class="nav-links"><a href="contato.html" onclick="exitMenu()">Contato</a></li>
+                        <li class="nav-links"><a href="revenda.html" onclick="exitMenu()">Revenda</a></li>
+                        <li class="nav-links"><a href="personalizado.html" onclick="exitMenu()">Personalizado</a></li>
+                    </ul>
+                    <div class="pg__icons-header">
+                        <a href="https://www.facebook.com/Coisas-de-MDF-105229301469630/" class='bx bxl-facebook icon' target="_blank" onclick="exitMenu()"></a>
+                        <a href="https://www.instagram.com/coisasdemdf.com.br/" class='bx bxl-instagram icon' target="_blank" onclick="exitMenu()"></a>
+                    </div>
+                </div>
+            </div>
+    </menu>
+
+    <chat class="white__box">
+        <a href="https://api.whatsapp.com/send?phone=5512981173031 sms:?&body=/*Seila*/"  id="chat__icon" class='bx bxs-message-rounded-detail bx-tada-hover' target="_blank" ></a>
+    </chat>
+
+    <header>
+        <section id="mobile" class="header"> 
+                <nav class="nav-bar" id="nav-bar">
+                    <div class="frete">Frete Grátis para Todo o Brasil</div>
+                    <div class="nav-bar__down">
+                    <a href="#footer"><img src="assets/img/inicial/logo-menu.png" class="logo-menu"></a>
+                        <i class='bx bx-menu hamburger' onclick="openMenu()"></i>
+                    </div>
+                </nav>
+        </section>
+        <section id="desktop" class="header"> 
+                <nav class="nav-bar">
+                    <div class="frete">Frete Grátis para Todo o Brasil</div>
+                    <div class="nav-bar__down">
+                        <a href="#footer"><img src="assets/img/inicial/logo-menu.png" class="logo-menu"></a>
+                        <i class='bx bx-menu hamburger' onclick="openMenu()"></i>
+                    </div>
+                </nav>
+        </section>
+    </header>
+    
+    <main id="produtos">
+       <section id="section__product">
+           <div class="produtos__esquerda">
+            <div class="main__product-photo" id="product__a"><img src="assets/img/produtos/1.jpg" alt=""></div>
+            <div class="main__product-photo hide" id="product__b"><img src="assets/img/produtos/1-b.jpg" alt=""></div>
+            <div class="mini__products">
+                <div onclick="swapA()" class="mini__picture"><img src="assets/img/produtos/1.jpg" alt=""></div>
+                <div onclick="swapB()" class="mini__picture"><img src="assets/img/produtos/1-b.jpg" alt=""></div>
+            </div>
+            <div class="produto__descricao">
+                <h4>Conteúdo</h4>
+                <p>• 01 Conjunto de 03 Quadros "Mapa Mundi"<br>• 01 Manual uso/instalação.<br></p>
+                <h4>Medidas Disponíveis</h4>
+                <p>• Tamanho Único (30x40cm) - Por Quadro</p>
+                <h4>Material</h4>
+                <p>• MDF 3mm Berneck®</p>
+                <h4>Cor</h4>
+                <p>• Natural da madeira (CRU)</p>
+                <h4>Instalação Simples</h4>
+                <p>• Este produto acompanha fita dupla-face 3M®.</p>
+                <h4>Importante</h4>
+                <p>• Gostaria de orçar um produto diferente? Basta entrar em <strong><a href="contato.html"> contato.</a></strong><br>• Antes de efetuar a compra por favor, leia as condições de uso.<br>• Enviamos gratuitamente até você.</p>
+            </div>
+           </div>
+           <div class="produtos__direita">
+                <h2>Conjunto "Mapa Mundi"</h2>
+               <div class="produto__valores">
+                <h3>R$ 99,00</h3>
+                <p>ou 10x de R$ 9.99 sem juros</p>
+               </div>
+               <div class="button__container-product">
+                <button>Adicione ao Carrinho</button>
+                <button>Compre pelo WhatsApp</button>
+               </div>
+
+               <div class="condicoes-de-uso">
+                   <a href="#"></a>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit provident neque repellat perferendis voluptate? Quam nobis odit dolore provident, ad corrupti, tenetur iure vel necessitatibus placeat eius sapiente. Voluptatum fugit assumenda molestias. Accusamus fugit cumque architecto quos ea modi est consequuntur dolorem illo tempore praesentium voluptates, explicabo dignissimos magni aperiam laboriosam id unde, nemo doloribus. Minima recusandae quod dolores repellat.</p>
+               </div>
+           </div>
+       </section>
+    </main>
+
+    <footer>
+        <section id="footer">
+            <div class="footer">
+            <ul class="footer__links">
+                <li class="footer__link"><a href="index.html">Página Inicial</a></li>
+                <li class="footer__link"><a href="loja.html">Loja</a></li>
+                <li class="footer__link"><a href="quemsomos.html">Quem Somos</a></li>
+                <li class="footer__link"><a href="contato.html">Contato</a></li>
+            </ul>
+            <ul class="footer__links">
+                <li class="footer__link"><a href="revenda.html">Revenda</a></li>
+                <li class="footer__link"><a href="faq.html">FAQ</a></li>
+                <li class="footer__link"><a href="envio.html">Envio e Devoluções</a></li>
+                <li class="footer__link"><a href="metodo.html">Métodos de Pagamento</a></li>
+            </ul>
+            <div class="pg__icons">
+                <a href="https://www.facebook.com/Coisas-de-MDF-105229301469630/" class='bx bxl-facebook icon' target="_blank" ></a>
+                <a href="https://www.instagram.com/coisasdemdf.com.br/" class='bx bxl-instagram icon' target="_blank" ></a>
+            </div>
+            <a href="#top"><img src="assets/img/inicial/logo-menu.png"></a>   
+            </div>
+        </section>
+
+        <section class="end">
+            <div class="end__text">
+                <p>©2020 por Coisas de  MDF. Cutting Laser  - CPF/CNPJ: 24.245.811/0001-10 - Al. dos Ingás, 46, Feiticeira, Ilhabela, SP 11630-000. </p>
+                <p>E-mail para contato: coisasdemdf@gmail.com.br - WhatsApp: (12) 98117-3031</p> 
+                <p>Prazo estimado para entrega de até 7 dias úteis após a postagem.</p>
+            </div>
+        </section>
+    </footer>
+        
+    <script>
+        // Toggle para o Menu
+        function openMenu() {
+        var toggle = document.getElementById("toggleMenu");
+        toggle.classList.remove("hide");
+        };
+
+        function exitMenu() {
+        var toggle = document.getElementById("toggleMenu");
+        toggle.classList.add("hide");
+        };
+
+        // Hide on Scroll
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 700) {
+        return document.querySelector('.nav-bar').style.top = "-100%";
+        }
+        return document.querySelector('.nav-bar').style.top ="0"
+        });
+
+        // SWAP PHOTOS
+        function hidePhoto1() {
+        var toggle = document.getElementById("product__a");
+        toggle.classList.add("hide");
+        };
+
+        function showPhoto1b() {
+        var toggle = document.getElementById("product__b");
+        toggle.classList.remove("hide");
+        };
+
+        function swapB(){
+            hidePhoto1();
+            showPhoto1b();
+        }
+
+        function hidePhoto1b() {
+        var toggle = document.getElementById("product__a");
+        toggle.classList.remove("hide");
+        };
+
+        function showPhoto1() {
+        var toggle = document.getElementById("product__b");
+        toggle.classList.add("hide");
+        };
+
+        function swapA(){
+            hidePhoto1b();
+            showPhoto1();
+        }
+
+    </script>
+</body>
+</html>
