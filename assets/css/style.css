@@ -2533,6 +2533,12 @@ a{
         width: 100%;
     }
 
+    .button__container-product a{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .button__container-product button{
         margin: 5px 0;
         color: white;
@@ -2546,7 +2552,40 @@ a{
 
     .button__container-product button:hover{
         opacity: .8;
-        transition: .2s linear;
     }
+
+    #vermais{
+        background-color: transparent;
+        font-weight: bold;
+        color: black;
+        border: 1px solid grey;
+        padding: 11px 0;
+    }
+
+    .condicoes-de-uso{
+        margin-top: 2.5rem;
+    }
+
+    .condicoes-de-uso h4{
+        margin-bottom: 1rem;
+        font-family: 'Lulo', sans-serif;
+        font-size: .75rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .condicoes-de-uso h4 span i{
+        font-size: .9rem;
+    }
+
+    .condicoes-de-uso h4 span:hover{
+        opacity: .7;
+        cursor: pointer;
+    }
+
+    .condicoes-de-uso p{
+        line-height: 1.4rem;
+    }
+
 
 }

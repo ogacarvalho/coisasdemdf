@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <title>Coisas de MDF | Quem Somos! </title>
+    <title>Coisas de MDF | Produto </title>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>  
@@ -36,7 +36,7 @@
     </menu>
 
     <chat class="white__box">
-        <a href="https://api.whatsapp.com/send?phone=5512981173031&text=Ol%C3%A1%21%20Estou%20interessado%20neste%20produto%21" id="chat__icon" class='bx bxs-message-rounded-detail bx-tada-hover' target="_blank"></a>
+        <a href="https://api.whatsapp.com/send?phone=5512981173031&text=Ol%C3%A1%21%20%0APoderia%20me%20ajudar%3F" id="chat__icon" class='bx bxs-message-rounded-detail bx-tada-hover' target="_blank"></a>
     </chat>
 
     <header>
@@ -63,11 +63,11 @@
     <main id="produtos">
        <section id="section__product">
            <div class="produtos__esquerda">
-            <div class="main__product-photo" id="product__a"><img src="assets/img/produtos/1.jpg" alt=""></div>
-            <div class="main__product-photo hide" id="product__b"><img src="assets/img/produtos/1-b.jpg" alt=""></div>
+            <div class="main__product-photo" id="product__a"><img src="assets/img/produtos/1-b.jpg" alt=""></div>
+            <div class="main__product-photo hide" id="product__b"><img src="assets/img/produtos/1.jpg" alt=""></div>
             <div class="mini__products">
-                <div onclick="swapA()" class="mini__picture"><img src="assets/img/produtos/1.jpg" alt=""></div>
-                <div onclick="swapB()" class="mini__picture"><img src="assets/img/produtos/1-b.jpg" alt=""></div>
+                <div onclick="swapA()" class="mini__picture"><img src="assets/img/produtos/1-b.jpg" alt=""></div>
+                <div onclick="swapB()" class="mini__picture"><img src="assets/img/produtos/1.jpg" alt=""></div>
             </div>
             <div class="produto__descricao">
                 <h4>Conteúdo</h4>
@@ -88,16 +88,28 @@
                 <h2>Conjunto "Mapa Mundi"</h2>
                <div class="produto__valores">
                 <h3>R$ 99,00</h3>
-                <p>ou 10x de R$ 9.99 sem juros</p>
+                <p>ou 10x de R$ 9.90 sem juros</p>
                </div>
                <div class="button__container-product">
-                <button>Adicione ao Carrinho</button>
-                <button>Compre pelo WhatsApp</button>
+                <a href="loja.html"><button id="vermais">Ver mais!</button></a>
+                <button><a href="https://api.whatsapp.com/send?phone=5512981173031&text=Ol%C3%A1%21%0AEstou%20interessado%28a%29%20neste%20produto%21%0Ahttps%3A%2F%2Fcoisasdemdf.netlify.app%2Fproduto-01.html" target="_blank">Compre pelo WhatsApp!</a></button>
                </div>
 
                <div class="condicoes-de-uso">
-                   <a href="#"></a>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit provident neque repellat perferendis voluptate? Quam nobis odit dolore provident, ad corrupti, tenetur iure vel necessitatibus placeat eius sapiente. Voluptatum fugit assumenda molestias. Accusamus fugit cumque architecto quos ea modi est consequuntur dolorem illo tempore praesentium voluptates, explicabo dignissimos magni aperiam laboriosam id unde, nemo doloribus. Minima recusandae quod dolores repellat.</p>
+                    <a onclick="amplify()" class="hide" id="unhide"><h4>condições de uso <span><i class='bx bx-plus'></i></span></h4></a>
+                    <div id="descricao__direita" class="descricao__direita">
+                        <a onclick="minify()"><h4>condições de uso <span>—</span></h4></a>
+                        <p> • As fotos são meramente ilustrativas.<br>
+                            • Os objetos que ambientam a foto não acompanham o produto.<br>
+                            • O MDF é um produto natural e sua tonalidade pode variar.<br> 
+                            • O MDF é um derivado de madeira e não pode ser molhado.<br>
+                            • Por razões logísticas, peças únicas maiores que 65cm são divididas em partes.<br>
+                            • Os produtos estão sujeitos a adaptações durante o processo de fabricação.<br> 
+                            • Prazo para postagem de 3 a 7 dias úteis após confirmação de pagamento.<br> 
+                            • Prazo estimado para entrega de até 7 dias úteis após a postagem.<br>
+                            
+                            <strong>Ao utilizar nossos serviços, você estará de acordo com as condições citadas a cima, por favor leia tudo cuidadosamente. Caso não concorde, não utilize os nossos serviços.</strong></p>
+                    </div>
                </div>
            </div>
        </section>
@@ -185,6 +197,35 @@
             hidePhoto1b();
             showPhoto1();
         }
+
+        // Minify
+        function minimizar(){
+        var toggle = document.getElementById("descricao__direita");
+        toggle.classList.toggle("hide");
+        };
+
+        function hide(){
+        var toggle = document.getElementById("unhide");
+        toggle.classList.add("hide");
+        };
+
+
+        // Amplify
+        function unHide(){
+        var toggle = document.getElementById("unhide");
+        toggle.classList.remove("hide");
+        };
+
+        function minify(){
+            minimizar();
+            unHide();
+        }
+
+        function amplify(){
+            minimizar();
+            hide();
+        }
+
 
     </script>
 </body>
