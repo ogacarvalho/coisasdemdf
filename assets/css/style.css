@@ -2460,6 +2460,10 @@ a{
         text-align: justify;
     }
 
+    #title__mobile{
+        display: none;
+    }
+
     .main__product-photo img{
         width: 35vw;
         height: 35vw;
@@ -2588,4 +2592,78 @@ a{
     }
 
 
+}
+
+@media screen and (max-width: 968px){
+
+    #section__product{
+        width: 90%;
+        height: 90%;
+    }
+
+    .main__product-photo img{
+        width: 55vw;
+        height: 55vw;
+    }
+
+    .produtos__direita h2{
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .produto__valores h3{
+        font-size: 1.3rem;
+    }
+
+    .condicoes-de-uso{
+        margin-top: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 468px){
+    #section__product{
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem 0;
+    }
+
+    #title__mobile{
+        display: block;
+        font-family: 'Lulo', sans-serif;
+        text-align: left;
+        color:var(--background-color);
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .produtos__direita h2{
+        display: none;
+    }
+
+    .main__product-photo img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .produtos__esquerda, .produtos__direita{
+        margin: 0;
+    }
+
+    .condicoes-de-uso{
+        margin-top: 1rem;
+    }
+
+    .produto__valores{
+        margin-bottom: 1.2rem;
+        text-align: right;
+    }
+
+    .produto__valores h3{
+        font-size: 1.6rem;
+    }
+
+    .produto__descricao h4{
+        margin-top: 1rem;
+    }
+    
 }
