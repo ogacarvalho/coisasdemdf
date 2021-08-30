@@ -2511,7 +2511,7 @@ a{
     .produtos__direita h2{
         font-family: 'Lulo', sans-serif;
         text-align: start;
-        color: grey;
+        color: var(--background-color);
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
     }
@@ -2555,7 +2555,8 @@ a{
     }
 
     .button__container-product button:hover{
-        opacity: .8;
+        opacity: .5;
+        cursor: pointer;
     }
 
     #vermais{
@@ -2564,6 +2565,7 @@ a{
         color: black;
         border: 1px solid grey;
         padding: 11px 0;
+        cursor: default;
     }
 
     .condicoes-de-uso{
