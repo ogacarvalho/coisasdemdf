@@ -393,19 +393,19 @@ a{
     
     
     #ig-1{
-        background-image: url("../img/produtos/2-b.jpg");
+        background-image: url("../img/produtos/22-b.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
     
     #ig-2{
-        background-image: url("../img/produtos/1-b.jpg");
+        background-image: url("../img/produtos/15-b.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
     
     #ig-3{
-        background-image: url("../img/produtos/4-b.jpg");
+        background-image: url("../img/produtos/39-b.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -2026,7 +2026,6 @@ a{
     .items__personalizado{
         width: 32vw;
         height: 32vw;
-        cursor: pointer;
     }
 
     #seta__direita-personalizado{
@@ -2054,23 +2053,23 @@ a{
         background-image: url("../img/personalizado/mulher-perso-min.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        transition: .1s ease-in-out;
+        transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         
     }
     #item__1-personalizado:hover{
-        opacity: .5;
+        transform: translateY(-10px);
     }
-    
+
     
     #item__2-personalizado{
         background-image: url("../img/personalizado/hexa-perso-min.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        transition: .1s ease-in-out;
+        transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     
     }
     #item__2-personalizado:hover{
-        opacity: .5;
+        transform: translateY(-10px);
     }
     
     
@@ -2078,10 +2077,10 @@ a{
         background-image: url("../img/personalizado/maos-perso-min.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        transition: .1s ease-in-out;
+        transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     #item__3-personalizado:hover{
-        opacity: .5;
+        transform: translateY(-10px);
     }
     
     
@@ -2089,10 +2088,10 @@ a{
         background-image: url("../img/personalizado/brinco01-perso-min.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        transition: .1s ease-in-out;
+        transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     #item__4-personalizado:hover{
-        opacity: .5;
+        transform: translateY(-10px);
     }
     
     
@@ -2100,10 +2099,10 @@ a{
         background-image: url("../img/personalizado/olhos-perso-min.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        transition: .1s ease-in-out;
+        transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     #item__5-personalizado:hover{
-        opacity: .5;
+        transform: translateY(-10px);
     }
     
     
@@ -2111,10 +2110,10 @@ a{
         background-image: url("../img/personalizado/seja-luz-perso-min.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        transition: .1s ease-in-out;
+        transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     #item__6-personalizado:hover{
-        opacity: .5;
+        transform: translateY(-10px);
     }
 
     #bx__chat-personalizado{
@@ -2125,6 +2124,7 @@ a{
     
     #bx__chat-personalizado:hover{
         opacity: .5;
+        transform: translateY(-5px);
         cursor: pointer;
     }
 
@@ -2506,6 +2506,7 @@ a{
         font-weight: normal;
         text-transform: none;
         font-size: .9rem;
+        width: 100%;
     }
 
     .produtos__direita h2{
